@@ -6,24 +6,25 @@
   <title>
     HTML Academy: Девайс
   </title>
-  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 
 <body>
   <header class="page__header">
     <div class="container">
       <a href="index.html">
-        <img class="header__logo" src="assets/images/logo-header.svg" width="145" height="36" alt="Логотип магазина Device.">
+        <img class="header__logo" src="assets/images/logo-header.svg" width="145" height="36"
+          alt="Логотип магазина Device.">
       </a>
       <nav class="header__navigation">
         <ul class="user-navigation">
           <li class="user-navigation__item">
-            <a class="user-navigation__link--light user-navigation__link--search" href="#">
+            <a class="user-navigation__link user-navigation__link--search" href="#">
               Поиск по сайту
             </a>
           </li>
           <li class="user-navigation__item">
-            <a class="user-navigation__link" href="#">
+            <a class="user-navigation__link user-navigation__link--user" href="#">
               Коля Петухов
             </a>
           </li>
@@ -33,14 +34,16 @@
             </a>
           </li>
           <li class="user-navigation__item">
-            <a class="user-navigation__link" href="#">
+            <a class="user-navigation__link user-navigation__link--compare" href="#">
               Сравнить
             </a>
           </li>
           <li class="user-navigation__item">
-            <a class="user-navigation__link" href="#">
-              <span class="items-in-cart">
-                2
+            <a class="user-navigation__link user-navigation__link--cart" href="#">
+              <span class="user-navigation__items-in-cart-wrapper">
+                <span class="user-navigation__items-in-cart-text">
+                  2
+                </span>
               </span>
               Корзина
             </a>
@@ -215,12 +218,14 @@
           Отсортировать
         </button>
       </form>
-      <a class="catalog__abs-sorting-button" href="#">
+      <a class="catalog__abs-sorting-button-wrapper" href="#">
+        <div class="catalog__abs-sorting-button catalog__sorting-button--active"></div>
         <span class="visually-hidden">
           Отсортировать в обычном порядке.
         </span>
       </a>
-      <a class="catalog__desc-sorting-button" href="#">
+      <a class="catalog__desc-sorting-button-wrapper" href="#">
+        <div class="catalog__desc-sorting-button"></div>
         <span class="visually-hidden">
           Отсортировать в обратном порядке.
         </span>
@@ -228,7 +233,8 @@
       <div class="catalog__products">
         <div class="product">
           <a class="product__link" href="#">
-            <img class="product__image" src="" alt="Любительская селфи-палка.">
+            <img class="product__image" src="assets/images/products/monopod-fan.png" width="360" height="360"
+              alt="Любительская селфи-палка.">
             <span class="product__more-button visually-hidden button">
               Подробнее
             </span>
@@ -244,7 +250,8 @@
         </div>
         <div class="product">
           <a class="product__link" href="#">
-            <img class="product__image" src="" alt="Профессиональная селфи-палка.">
+            <img class="product__image" src="assets/images/products/monopod-pro.png" width="360" height="360"
+              alt="Профессиональная селфи-палка.">
             <span class="product__more-button visually-hidden button">
               Подробнее
             </span>
@@ -260,7 +267,8 @@
         </div>
         <div class="product">
           <a class="product__link" href="#">
-            <img class="product__image" src="" alt="Непотопляемая селфи-палка.">
+            <img class="product__image" src="assets/images/products/monopod-underwater.png" width="360" height="360"
+              alt="Непотопляемая селфи-палка.">
             <span class="product__more-button visually-hidden button">
               Подробнее
             </span>
@@ -277,7 +285,8 @@
         </div>
         <div class="product">
           <a class="product__link" href="#">
-            <img class="product__image" src="" alt="Селфи-палка «Следуй за мной».">
+            <img class="product__image" src="assets/images/products/monopod-follow-me.png" width="360" height="360"
+              alt="Селфи-палка «Следуй за мной».">
             <span class="product__more-button visually-hidden button">
               Подробнее
             </span>
@@ -340,7 +349,8 @@
 
   <footer class="page__footer">
     <div class="container">
-      <img class="footer__logo" src="" alt="Логотип магазина Device.">
+      <img class="footer__logo" src="assets/images/logo-footer.svg" width="145" height="36"
+        alt="Логотип магазина Device.">
       <div class="footer__sections-wrapper">
         <section class="footer__contacts">
           <h2 class="visually-hidden">
@@ -377,24 +387,24 @@
           <h2 class="visually-hidden">
             Социальные сети
           </h2>
-          <span class="socials__line line--yellow"></span>
+          <div class="socials__line"></div>
           <ul class="socials__list">
-            <li class="socials__item">
-              <a class="socials__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <li class="socials__item socials__item--facebook">
+              <a class="socials__link socials__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">
                   Фэйсбук
                 </span>
               </a>
             </li>
-            <li class="socials__item">
-              <a class="socials__link--instagram" href="https://www.instagram.com/htmlacademy/">
+            <li class="socials__item socials__item--instagram">
+              <a class="socials__link socials__link--instagram" href="https://www.instagram.com/htmlacademy/">
                 <span class="visually-hidden">
                   Инстаграм
                 </span>
               </a>
             </li>
-            <li class="socials__item">
-              <a class="socials__link--twitter" href="https://twitter.com/htmlacademy_ru">
+            <li class="socials__item socials__item--twitter">
+              <a class="socials__link socials__link--twitter" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">
                   Твиттер
                 </span>
@@ -405,7 +415,8 @@
             <span class="visually-hidden">
               Html Academy
             </span>
-            <img src="" alt="Логотип Html Academy.">
+            <img class="socials__academy-image" src="assets/images/html-academy-logo.svg" width="115" height="33"
+              alt="Логотип Html Academy.">
           </a>
         </section>
       </div>

@@ -49,19 +49,19 @@
 .user-navigation__link--search::before {
   width: 15px;
   height: 15px;
-  background: url("/assets/icons/search.svg") #ffe17f no-repeat center / contain;
+  background: url("/assets/icons/header/search.svg") #ffe17f no-repeat center / contain;
 }
 
 .user-navigation__link--user::before {
   width: 13px;
   height: 12px;
-  background: url("/assets/icons/user.svg") #ffe17f no-repeat center / contain;
+  background: url("/assets/icons/header/user.svg") #ffe17f no-repeat center / contain;
 }
 
 .user-navigation__link--compare::before {
   width: 10px;
   height: 12px;
-  background: url("/assets/icons/compare.svg") #ffe17f no-repeat center /
+  background: url("/assets/icons/header/compare.svg") #ffe17f no-repeat center /
     contain;
 }
 
@@ -71,7 +71,7 @@
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
-  background: url("/assets/icons/cart.svg") #ffe17f no-repeat center / contain;
+  background: url("/assets/icons/header/cart.svg") #ffe17f no-repeat center / contain;
 }
 
 .user-navigation__items-in-cart-wrapper {
@@ -115,31 +115,31 @@
 }
 
 .catalog__image--vr {
-  background: url("/assets/images/vr.svg") #ffe17f center / 97px 55px no-repeat;
+  background: url("/assets/images/catalog/vr.svg") #ffe17f center / 97px 55px no-repeat;
 }
 
 .catalog__image--monopod {
-  background: url("/assets/images/monopod.svg") #ffe17f bottom / 86px 117px
+  background: url("/assets/images/catalog/monopod.svg") #ffe17f bottom / 86px 117px
     no-repeat;
 }
 
 .catalog__image--action-camera {
-  background: url("/assets/images/action-camera.svg") #ffe17f center / 71px 87px
+  background: url("/assets/images/catalog/action-camera.svg") #ffe17f center / 71px 87px
     no-repeat;
 }
 
 .catalog__image--fitness-tracker {
-  background: url("/assets/images/fitness-tracker.svg") #ffe17f center / 107px
+  background: url("/assets/images/catalog/fitness-tracker.svg") #ffe17f center / 107px
     65px no-repeat;
 }
 
 .catalog__image--watch {
-  background: url("/assets/images/watch.svg") #ffe17f center / 56px 98px
+  background: url("/assets/images/catalog/watch.svg") #ffe17f center / 56px 98px
     no-repeat;
 }
 
 .catalog__image--quadrocopter {
-  background: url("/assets/images/quadrocopter.svg") #ffe17f center / 132px 69px
+  background: url("/assets/images/catalog/quadrocopter.svg") #ffe17f center / 132px 69px
     no-repeat;
 }
 
@@ -150,15 +150,15 @@
 }
 
 .tab__image--delivery {
-  background: url("/assets/images/delivery.svg") center / contain no-repeat;
+  background: url("/assets/images/services/delivery.svg") center / contain no-repeat;
 }
 
 .tab__image--warranty {
-  background: url("/assets/images/warranty.svg") center / contain no-repeat;
+  background: url("/assets/images/services/warranty.svg") center / contain no-repeat;
 }
 
 .tab__image--credit {
-  background: url("/assets/images/credit.svg") center / contain no-repeat;
+  background: url("/assets/images/services/credit.svg") center / contain no-repeat;
 }
 
 /* Shipping of rare products */
@@ -251,16 +251,42 @@
 }
 
 .socials__item--facebook {
-  background: url("/assets/icons/facebook.svg") rgba(255, 255, 255, 0.3) center /
+  background: url("/assets/icons/socials/facebook.svg") rgba(255, 255, 255, 0.3) center /
     9px 18px no-repeat;
 }
 
 .socials__item--instagram {
-  background: url("/assets/icons/instagram.svg") rgba(255, 255, 255, 0.3) center /
+  background: url("/assets/icons/socials/instagram.svg") rgba(255, 255, 255, 0.3) center /
     16px 16px no-repeat;
 }
 
 .socials__item--twitter {
-  background: url("/assets/icons/tweeter.svg") rgba(255, 255, 255, 0.3) center /
+  background: url("/assets/icons/socials/tweeter.svg") rgba(255, 255, 255, 0.3) center /
     15px 14px no-repeat;
+}
+
+
+/* Catalog - Sorting  */
+.catalog__abs-sorting-button,
+.catalog__desc-sorting-button {
+  width: 11px;
+  height: 10px;
+}
+
+.catalog__abs-sorting-button {
+  background: url('/assets/icons/sort-up.svg') center / 11px 10px no-repeat;
+}
+
+.catalog__desc-sorting-button {
+  background: url('/assets/icons/sort-down.svg') center / 11px 10px no-repeat;
+}
+
+.catalog__sorting-button--active {
+  opacity: 0.2;
+}
+
+/* Catalog - Products */
+.product__image {
+  height: 360px;
+  width: 360px;
 }
