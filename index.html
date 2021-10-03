@@ -6,33 +6,37 @@
   <title>
     HTML Academy: Девайс
   </title>
+  <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 
 <body>
   <header class="page__header">
     <div class="container">
-      <img class="header__logo" src="" alt="Логотип магазина Device.">
+      <img class="header__logo" src="assets/images/logo-header.svg" width="145" height="36"
+        alt="Логотип магазина Device.">
       <nav class="header__navigation">
         <ul class="user-navigation">
           <li class="user-navigation__item">
-            <a class="user-navigation__link" href="#">
+            <a class="user-navigation__link user-navigation__link--search" href="#">
               Поиск по сайту
             </a>
           </li>
           <li class="user-navigation__item">
-            <a class="user-navigation__link" href="#">
+            <a class="user-navigation__link user-navigation__link--user" href="#">
               Войти
             </a>
           </li>
           <li class="user-navigation__item">
-            <a class="user-navigation__link" href="#">
+            <a class="user-navigation__link user-navigation__link--compare" href="#">
               Сравнить
             </a>
           </li>
           <li class="user-navigation__item">
-            <a class="user-navigation__link" href="#">
-              <span class="items-in-cart">
-                2
+            <a class="user-navigation__link user-navigation__link--cart" href="#">
+              <span class="user-navigation__items-in-cart-wrapper">
+                <span class="user-navigation__items-in-cart-text">
+                  2
+                </span>
               </span>
               Корзина
             </a>
@@ -79,7 +83,8 @@
               <h3 class="visually-hidden">
                 Квадрокоптер
               </h3>
-              <img class="slider-item__image" src="" alt="Квадрокоптер.">
+              <img class="slider-item__image" src="assets/images/slider-quadrocopter.png" width="560" height="560"
+                alt="Квадрокоптер.">
               <div class="slider-item__description-wrapper">
                 <p class="slider-item__promo-text">
                   Порхает как бабочка,
@@ -116,7 +121,8 @@
               <h3 class="visually-hidden">
                 Фитнес-браслет
               </h3>
-              <img class="slider-item__image" src="" alt="Фитнес-браслет.">
+              <img class="slider-item__image" src="assets/images/slider-fitness-tracker.png" width="560" height="560"
+                alt="Фитнес-браслет.">
               <div class="slider-item__description-wrapper">
                 <p class="slider-item__promo-text">
                   Худеем
@@ -146,7 +152,8 @@
               <h3 class="visually-hidden">
                 Селфи-палка
               </h3>
-              <img class="slider-item__image" src="" alt="Селфи-палка.">
+              <img class="slider-item__image" src="assets/images/slider-monopod.png" width="560" height="560"
+                alt="Селфи-палка.">
               <div class="slider-item__description-wrapper">
                 <p class="slider-item__promo-text">
                   Делай селфи,
@@ -230,7 +237,7 @@
         <ul class="catalog">
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img class="catalog__image" src="" alt="Товары категории Виртуальная реальность.">
+              <div class="catalog__image catalog__image--vr"></div>
               <p class="catalog__text">
                 Виртуальная реальность
               </p>
@@ -238,7 +245,7 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img class="catalog__image" src="" alt="Товары категории Моноподы для селфи.">
+              <div class="catalog__image catalog__image--monopod"></div>
               <p class="catalog__text">
                 Моноподы для селфи
               </p>
@@ -246,7 +253,7 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img class="catalog__image" src="" alt="Товары категории Экшн-камеры.">
+              <div class="catalog__image catalog__image--action-camera"></div>
               <p class="catalog__text">
                 Экшн-камеры
               </p>
@@ -254,7 +261,7 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img class="catalog__image" src="" alt="Товары категории Фитнес-браслеты.">
+              <div class="catalog__image catalog__image--fitness-tracker"></div>
               <p class="catalog__text">
                 Фитнес-браслеты
               </p>
@@ -262,7 +269,7 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img class="catalog__image" src="" alt="Товары категории Умные часы.">
+              <div class="catalog__image catalog__image--watch"></div>
               <p class="catalog__text">
                 Умные часы
               </p>
@@ -270,7 +277,7 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img class="catalog__image" src="" alt="Товары категории Квадрокоптеры.">
+              <div class="catalog__image catalog__image--quadrocopter"></div>
               <p class="catalog__text">
                 Квадрокоптеры
               </p>
@@ -305,7 +312,7 @@
                   мы неплохо заработаем, поднимая его на ваш этаж.
                 </p>
               </div>
-              <div class="tab__image"></div>
+              <div class="tab__image tab__image--delivery"></div>
             </div>
             <div class="tab">
               <div class="tab__content">
@@ -318,7 +325,7 @@
                   Товар, не дом, конечно же.
                 </p>
               </div>
-              <div class="tab__image"></div>
+              <div class="tab__image tab__image--warranty"></div>
             </div>
             <div class="tab">
               <div class="tab__content">
@@ -330,7 +337,7 @@
                   кредита. Выгодные для банка, разумеется.
                 </p>
               </div>
-              <div class="tab__image"></div>
+              <div class="tab__image tab__image--credit"></div>
             </div>
           </div>
         </div>
@@ -347,7 +354,7 @@
       </div>
     </section>
     <section class="main__about">
-      <span class="about__line line--black"></span>
+      <div class="about__line"></div>
       <h2 class="about__title title">
         О нас
       </h2>
@@ -373,7 +380,7 @@
       </a>
     </section>
     <section class="main__contacts">
-      <span class="contacts__line line--black"></span>
+      <div class="contacts__line"></div>
       <h2 class="contacts__title title">
         Контакты
       </h2>
@@ -433,7 +440,8 @@
 
   <footer class="page__footer">
     <div class="container">
-      <img class="footer__logo" src="" alt="Логотип магазина Device.">
+      <img class="footer__logo" src="assets/images/logo-footer.svg" width="145" height="36"
+        alt="Логотип магазина Device.">
       <div class="footer__sections-wrapper">
         <section class="footer__contacts">
           <h2 class="visually-hidden">
@@ -470,24 +478,24 @@
           <h2 class="visually-hidden">
             Социальные сети
           </h2>
-          <span class="socials__line line--yellow"></span>
+          <div class="socials__line"></div>
           <ul class="socials__list">
-            <li class="socials__item">
-              <a class="socials__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <li class="socials__item socials__item--facebook">
+              <a class="socials__link socials__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">
                   Фэйсбук
                 </span>
               </a>
             </li>
-            <li class="socials__item">
-              <a class="socials__link--instagram" href="https://www.instagram.com/htmlacademy/">
+            <li class="socials__item socials__item--instagram">
+              <a class="socials__link socials__link--instagram" href="https://www.instagram.com/htmlacademy/">
                 <span class="visually-hidden">
                   Инстаграм
                 </span>
               </a>
             </li>
-            <li class="socials__item">
-              <a class="socials__link--twitter" href="https://twitter.com/htmlacademy_ru">
+            <li class="socials__item socials__item--twitter">
+              <a class="socials__link socials__link--twitter" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">
                   Твиттер
                 </span>
@@ -498,7 +506,8 @@
             <span class="visually-hidden">
               Html Academy
             </span>
-            <img src="" alt="Логотип Html Academy.">
+            <img class="socials__academy-image" src="assets/images/html-academy-logo.svg" width="115" height="33"
+              alt="Логотип Html Academy.">
           </a>
         </section>
       </div>
