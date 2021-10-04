@@ -1,4 +1,12 @@
 /* Common styles */
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
 
 .visually-hidden {
   position: absolute;
@@ -9,12 +17,6 @@
 }
 
 /* Header */
-.header__logo,
-.footer__logo {
-  width: 145px;
-  height: 36px;
-}
-
 .user-navigation__link {
   position: relative;
 }
@@ -49,13 +51,15 @@
 .user-navigation__link--search::before {
   width: 15px;
   height: 15px;
-  background: url("/img/icons/header/search.svg") #ffe17f no-repeat center / contain;
+  background: url("/img/icons/header/search.svg") #ffe17f no-repeat center /
+    contain;
 }
 
 .user-navigation__link--user::before {
   width: 13px;
   height: 12px;
-  background: url("/img/icons/header/user.svg") #ffe17f no-repeat center / contain;
+  background: url("/img/icons/header/user.svg") #ffe17f no-repeat center /
+    contain;
 }
 
 .user-navigation__link--compare::before {
@@ -71,7 +75,8 @@
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
-  background: url("/img/icons/header/cart.svg") #ffe17f no-repeat center / contain;
+  background: url("/img/icons/header/cart.svg") #ffe17f no-repeat center /
+    contain;
 }
 
 .user-navigation__items-in-cart-wrapper {
@@ -86,11 +91,6 @@
 }
 
 /* Slider */
-.slider-item__image {
-  width: 560px;
-  height: 560px;
-}
-
 .slider__button--next,
 .slider__button--previous {
   width: 20px;
@@ -99,48 +99,25 @@
 }
 
 .slider__button--next {
-  background: url("/img/icons/arrow-right.svg") #fff center / contain
-    no-repeat;
+  background: url("/img/icons/arrow-right.svg") #fff center / contain no-repeat;
 }
 
 .slider__button--previous {
-  background: url("/img/icons/arrow-left.svg") #fff center / contain
-    no-repeat;
+  background: url("/img/icons/arrow-left.svg") #fff center / contain no-repeat;
 }
 
 /* Catalog */
-.catalog__image {
+.catalog__image-wrapper {
   width: 160px;
   height: 160px;
-}
-
-.catalog__image--vr {
-  background: url("/img/catalog/vr.svg") #ffe17f center / 97px 55px no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe17f;
 }
 
 .catalog__image--monopod {
-  background: url("/img/catalog/monopod.svg") #ffe17f bottom / 86px 117px
-    no-repeat;
-}
-
-.catalog__image--action-camera {
-  background: url("/img/catalog/action-camera.svg") #ffe17f center / 71px 87px
-    no-repeat;
-}
-
-.catalog__image--fitness-tracker {
-  background: url("/img/catalog/fitness-tracker.svg") #ffe17f center / 107px
-    65px no-repeat;
-}
-
-.catalog__image--watch {
-  background: url("/img/catalog/watch.svg") #ffe17f center / 56px 98px
-    no-repeat;
-}
-
-.catalog__image--quadrocopter {
-  background: url("/img/catalog/quadrocopter.svg") #ffe17f center / 132px 69px
-    no-repeat;
+  align-self: flex-end;
 }
 
 /* Services */
@@ -233,16 +210,6 @@
   height: 33px;
 }
 
-.socials__academy-image {
-  width: 115px;
-  height: 33px;
-}
-
-.socials__link {
-  width: 100%;
-  height: 100%;
-}
-
 .socials__item {
   width: 40px;
   height: 40px;
@@ -251,20 +218,19 @@
 }
 
 .socials__item--facebook {
-  background: url("/img/icons/socials/facebook.svg") rgba(255, 255, 255, 0.3) center /
-    9px 18px no-repeat;
+  background: url("/img/icons/socials/facebook.svg") rgba(255, 255, 255, 0.3)
+    center / 9px 18px no-repeat;
 }
 
 .socials__item--instagram {
-  background: url("/img/icons/socials/instagram.svg") rgba(255, 255, 255, 0.3) center /
-    16px 16px no-repeat;
+  background: url("/img/icons/socials/instagram.svg") rgba(255, 255, 255, 0.3)
+    center / 16px 16px no-repeat;
 }
 
 .socials__item--twitter {
-  background: url("/img/icons/socials/tweeter.svg") rgba(255, 255, 255, 0.3) center /
-    15px 14px no-repeat;
+  background: url("/img/icons/socials/tweeter.svg") rgba(255, 255, 255, 0.3)
+    center / 15px 14px no-repeat;
 }
-
 
 /* Catalog - Sorting  */
 .catalog__abs-sorting-button,
@@ -274,19 +240,13 @@
 }
 
 .catalog__abs-sorting-button {
-  background: url('/img/icons/sort-up.svg') center / 11px 10px no-repeat;
+  background: url("/img/icons/sort-up.svg") center / 11px 10px no-repeat;
 }
 
 .catalog__desc-sorting-button {
-  background: url('/img/icons/sort-down.svg') center / 11px 10px no-repeat;
+  background: url("/img/icons/sort-down.svg") center / 11px 10px no-repeat;
 }
 
 .catalog__sorting-button--active {
   opacity: 0.2;
-}
-
-/* Catalog - Products */
-.product__image {
-  height: 360px;
-  width: 360px;
 }
