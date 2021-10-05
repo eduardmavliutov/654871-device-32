@@ -1,11 +1,94 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./../fonts/rubik/rubik-800.woff2") format("woff2");
+  font-display: swap;
+}
+
 /* Common styles */
 body {
   margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
 }
 
 img {
   max-width: 100%;
   object-fit: contain;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+.button {
+  min-width: 160px;
+  height: 20px;
+  font-family: "Raleway";
+  font-weight: 800;
+  line-height: 21px;
+  color: #000000;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button--active {
+  color: #ffe17f;
+  background-color: #000000;
+}
+
+.button--outlined {
+  padding: 17px 0 18px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+  outline: none;
+  background: transparent;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  height: 55px;
+}
+
+.container {
+  margin: auto 140px;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #444444;
 }
 
 .visually-hidden {
@@ -17,12 +100,37 @@ img {
 }
 
 /* Header */
+.page__header {
+  position: relative;
+  margin: 40px 140px 0;
+  color: inherit;
+  background: #ffe17f;
+}
+
+.header__logo {
+  position: absolute;
+  height: 36px;
+  top: -23px;
+  left: 61px;
+}
+
+.user-navigation {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
 .user-navigation__link {
   position: relative;
+  color: inherit;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: inherit;
 }
 
 .user-navigation__link--search {
   padding-left: 36px;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .user-navigation__link--user {
@@ -87,10 +195,42 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
   background-color: #fff;
 }
 
+.main-navigation {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-navigation__link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: inherit;
+  color: inherit;
+}
+
 /* Slider */
+.slider-item__description {
+  color: #444444;
+}
+
+.slider-item__feature-name {
+  font-size: 16px;
+  font-weight: normal;
+  color: #444444;
+}
+
+.slider-item__feature-text {
+  font-size: 36px;
+  font-weight: normal;
+}
+
 .slider__button--next,
 .slider__button--previous {
   width: 20px;
@@ -107,6 +247,16 @@ img {
 }
 
 /* Catalog */
+.catalog {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.catalog__item {
+  width: 160px;
+  height: 253px;
+}
 .catalog__image-wrapper {
   width: 160px;
   height: 160px;
@@ -120,10 +270,26 @@ img {
   align-self: flex-end;
 }
 
+.catalog__link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: inherit;
+  text-decoration: none;
+}
+
 /* Services */
+.tabs__list {
+  list-style: none;
+}
 .tab__image {
   width: 132px;
   height: 158px;
+}
+
+.tab__description {
+  color: #444444;
 }
 
 .tab__image--delivery {
@@ -139,14 +305,27 @@ img {
 }
 
 /* Shipping of rare products */
-.shipping-of-rare-products {
-  background: #f0f0f0;
-  padding: 37px 125px 43px 140px;
+.shipping-of-rare-products__inner {
   position: relative;
-  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100hpx;
+  background: #f0f0f0;
 }
 
-.shipping-of-rare-products::before {
+.shipping-of-rare-products__text {
+  padding: 37px 125px 43px 140px;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 800px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.shipping-of-rare-products__inner::before {
   content: "";
   position: absolute;
   width: 125px;
@@ -157,7 +336,7 @@ img {
     no-repeat;
 }
 
-.shipping-of-rare-products::after {
+.shipping-of-rare-products__inner::after {
   content: "";
   position: absolute;
   width: 40px;
@@ -175,13 +354,62 @@ img {
 .contacts__line {
   width: 80px;
   height: 7px;
-  background-color: black;
+  background-color: #000000;
+}
+
+.about__text,
+.about__delivery-options {
+  color: #444444;
+}
+
+.about__delivery-companies-item {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+/* Contacts */
+.contacts__schedule {
+  list-style: none;
+}
+
+.contacts__text,
+.contacts__contacts-item,
+.contacts__schedule-item {
+  color: #444444;
+  font-style: normal;
 }
 
 /* Subscribe */
+.main__subscribe {
+  background: #f0f0f0;
+}
+
+.subscribe__text {
+  color: #444444;
+}
+
+.subscribe__form {
+  display: flex;
+}
+
+.subscribe__form-field {
+  width: 601px;
+  height: 55px;
+  padding: 0;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+.subscribe__form-field::placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+
 .subscribe__for-free-tip {
   position: relative;
   padding-left: 35px;
+  color: #444444;
 }
 
 .subscribe__for-free-tip::before {
@@ -193,9 +421,27 @@ img {
   background: url("/img/icons/done.svg") center / 14px 14px no-repeat;
 }
 
+.subscribe__form-submit {
+  width: 260px;
+}
+
 /* Footer */
 .page__footer {
+  color: #ffffff;
   background: #444444;
+}
+
+.footer__contacts-item {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 19px;
+}
+
+.socials__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 /* Socials */
