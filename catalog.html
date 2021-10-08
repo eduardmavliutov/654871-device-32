@@ -11,7 +11,7 @@
 
 <body>
   <header class="page__header">
-    <div class="container">
+    <div class="header__container">
       <a href="index.html">
         <img class="header__logo" src="img/logo-header.svg" width="145" height="36" alt="Логотип магазина Device.">
       </a>
@@ -74,10 +74,10 @@
     </div>
   </header>
 
-  <main class="main__catalog-page">
-    <div class="container">
-      <header class="main__header">
-        <h1 class="main__title title">
+  <main class="page__catalog-page">
+    <div class="catalog-page__container">
+      <header class="catalog-page__header">
+        <h1 class="catalog-page__title title">
           Моноподы для селфи
         </h1>
         <ul class="breadcrumbs">
@@ -107,93 +107,96 @@
         <p class="filters__title form-title">
           фильтр:
         </p>
-        <fieldset class="filter__wrapper">
-          <legend class="filter__name">
-            Стоимость
-          </legend>
-          <button class="filter__range-toggle-min" type="button">
-            <span class="visually-hidden">
-              Изменить минимальную цену.
-            </span>
+        <div class="filters__container">
+          <fieldset class="filter__wrapper">
+            <legend class="filter__name">
+              Стоимость
+            </legend>
+            <button class="filter__range-toggle-min" type="button">
+              <span class="visually-hidden">
+                Изменить минимальную цену.
+              </span>
+            </button>
+            <button class="filter__range-toggle-max" type="button">
+              <span class="visually-hidden">
+                Изменить максимальную цену.
+              </span>
+            </button>
+            <label class="filter__label price-range-label">
+              от
+              <input class="filter__input" type="number" name="min-price">
+              ₽
+            </label>
+            <label class="filter__label price-range-label">
+              до
+              <input class="filter__input" type="number" name="max-price">
+              ₽
+            </label>
+          </fieldset>
+          <fieldset class="filter__wrapper">
+            <legend class="filter__name">
+              Цвет
+            </legend>
+            <label class="filter__label">
+              <input class="filter__input visually-hidden" type="checkbox" name="color" value="black" checked>
+              <span class="filter__checkbox--checked"></span>
+              <span class="filter__label-text">
+                Черный
+              </span>
+            </label>
+            <label class="filter__label">
+              <input class="filter__input visually-hidden" type="checkbox" name="color" value="white" checked>
+              <span class="filter__checkbox--checked"></span>
+              <span class="filter__label-text">
+                Белый
+              </span>
+            </label>
+            <label class="filter__label">
+              <input class="filter__input visually-hidden" type="checkbox" name="color" value="blue">
+              <span class="filter__checkbox--unchecked"></span>
+              <span class="filter__label-text">
+                Синий
+              </span>
+            </label>
+            <label class="filter__label">
+              <input class="filter__input visually-hidden" type="checkbox" name="color" value="red">
+              <span class="filter__checkbox--unchecked"></span>
+              <span class="filter__label-text">
+                Красный
+              </span>
+            </label>
+            <label class="filter__label">
+              <input class="filter__input visually-hidden" type="checkbox" name="color" value="pink">
+              <span class="filter__checkbox--unchecked"></span>
+              <span class="filter__label-text">
+                Розовый
+              </span>
+            </label>
+          </fieldset>
+          <fieldset class="filter__wrapper">
+            <legend class="filter__name">
+              Bluetooth
+            </legend>
+            <label class="filter__label">
+              <input class="filter__input visually-hidden" type="radio" name="bluetooth" value="yes" checked>
+              <span class="filter__radio--checked"></span>
+              <span class="filter__label-text">
+                Есть
+              </span>
+            </label>
+            <label class="filter__label">
+              <input class="filter__input visually-hidden" type="radio" name="bluetooth" value="no">
+              <span class="filter__radio--checked"></span>
+              <span class="filter__label-text">
+                Нет
+              </span>
+            </label>
+          </fieldset>
+          <button class="filters__submit button" type="submit">
+            Показать
           </button>
-          <button class="filter__range-toggle-max" type="button">
-            <span class="visually-hidden">
-              Изменить максимальную цену.
-            </span>
-          </button>
-          <label class="filter__label price-range-label">
-            от
-            <input class="filter__input" type="number" name="min-price">
-            ₽
-          </label>
-          <label class="filter__label price-range-label">
-            до
-            <input class="filter__input" type="number" name="max-price">
-            ₽
-          </label>
-        </fieldset>
-        <fieldset class="filter__wrapper">
-          <legend class="filter__name">
-            Цвет
-          </legend>
-          <label class="filter__label">
-            <input class="filter__input visually-hidden" type="checkbox" name="color" value="black" checked>
-            <span class="filter__checkbox--checked"></span>
-            <span class="filter__label-text">
-              Черный
-            </span>
-          </label>
-          <label class="filter__label">
-            <input class="filter__input visually-hidden" type="checkbox" name="color" value="white" checked>
-            <span class="filter__checkbox--checked"></span>
-            <span class="filter__label-text">
-              Белый
-            </span>
-          </label>
-          <label class="filter__label">
-            <input class="filter__input visually-hidden" type="checkbox" name="color" value="blue">
-            <span class="filter__checkbox--unchecked"></span>
-            <span class="filter__label-text">
-              Синий
-            </span>
-          </label>
-          <label class="filter__label">
-            <input class="filter__input visually-hidden" type="checkbox" name="color" value="red">
-            <span class="filter__checkbox--unchecked"></span>
-            <span class="filter__label-text">
-              Красный
-            </span>
-          </label>
-          <label class="filter__label">
-            <input class="filter__input visually-hidden" type="checkbox" name="color" value="pink">
-            <span class="filter__checkbox--unchecked"></span>
-            <span class="filter__label-text">
-              Розовый
-            </span>
-          </label>
-        </fieldset>
-        <fieldset class="filter__wrapper">
-          <legend class="filter__name">
-            Bluetooth
-          </legend>
-          <label class="filter__label">
-            <input class="filter__input visually-hidden" type="radio" name="bluetooth" value="yes" checked>
-            <span class="filter__radio--checked"></span>
-            <span class="filter__label-text">
-              Есть
-            </span>
-          </label>
-          <label class="filter__label">
-            <input class="filter__input visually-hidden" type="radio" name="bluetooth" value="no">
-            <span class="filter__radio--checked"></span>
-            <span class="filter__label-text">
-              Нет
-            </span>
-          </label>
-        </fieldset>
-        <button class="filters__submit button" type="submit">
-          Показать
-        </button>
+        </div>
+
       </form>
       <div class="catalog-page__sorting-wrapper">
         <form class="catalog-page__sorting" method="get" action="https://echo.htmlacademy.ru/">
@@ -353,7 +356,7 @@
   </main>
 
   <footer class="page__footer">
-    <div class="container">
+    <div class="footer__container">
       <img class="footer__logo" src="img/logo-footer.svg" width="145" height="36" alt="Логотип магазина Device.">
       <div class="footer__sections-wrapper">
         <section class="footer__contacts">
