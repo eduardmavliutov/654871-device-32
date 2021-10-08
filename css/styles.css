@@ -90,11 +90,6 @@ img {
   height: 55px;
 }
 
-.container {
-  margin: 0 auto;
-  width: 1160px;
-}
-
 .columns {
   width: 1160px;
   margin: 0 auto;
@@ -244,6 +239,11 @@ img {
 /* Main */
 .page__main {
   flex-grow: 1;
+}
+
+.promo__container {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 /* Slider */
