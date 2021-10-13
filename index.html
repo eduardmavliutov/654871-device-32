@@ -14,12 +14,13 @@
     <div class="header__container">
       <img class="header__logo" src="img/logo-header.svg" width="145" height="36" alt="Логотип магазина Device.">
       <nav class="header__navigation">
+        <form class="header__search" method="get" action="https://echo.htmlacademy.ru/">
+          <input class="search__input" placeholder="Поиск по сайту" type="search"
+            name="search">
+          <input class="search__submit" type="submit"
+            name="search" hidden>
+        </form>
         <ul class="user-navigation">
-          <li class="user-navigation__item">
-            <a class="user-navigation__link user-navigation__link--search" href="#">
-              Поиск по сайту
-            </a>
-          </li>
           <li class="user-navigation__item">
             <a class="user-navigation__link user-navigation__link--user" href="#">
               Войти
@@ -32,22 +33,17 @@
           </li>
           <li class="user-navigation__item">
             <a class="user-navigation__link user-navigation__link--cart" href="#">
-              <span class="user-navigation__items-in-cart-wrapper">
-                <span class="user-navigation__items-in-cart-text">
-                  2
-                </span>
-              </span>
               Корзина
             </a>
           </li>
         </ul>
         <ul class="main-navigation">
-          <li class="main-navigation__item">
+          <li class="main-navigation__item main-navigation__item--catalog">
             <a class="main-navigation__link" href="catalog.html">
               Каталог товаров
             </a>
           </li>
-          <li class="main-navigation__item">
+          <li class="main-navigation__item main-navigation__item--delivery">
             <a class="main-navigation__link" href="#">
               Доставка
             </a>
@@ -57,7 +53,7 @@
               Гарантия
             </a>
           </li>
-          <li class="main-navigation__item">
+          <li class="main-navigation__item main-navigation__item--contacts">
             <a class="main-navigation__link" href="#">
               Контакты
             </a>
