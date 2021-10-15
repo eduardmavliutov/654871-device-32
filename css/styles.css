@@ -185,6 +185,7 @@ img {
 
 .user-navigation__link--logout {
   color: rgba(0, 0, 0, 0.3);
+  padding-right: 45px;
 }
 
 .user-navigation__link--user {
@@ -251,6 +252,7 @@ img {
 .main-navigation {
   margin: 0;
   padding: 0;
+  padding-bottom: 50px;
   list-style-type: none;
   flex-basis: 100%;
   display: flex;
@@ -316,18 +318,19 @@ img {
 .slider__item {
   position: relative;
   width: 1160px;
-  height: 560px;
+  height: 710px;
   display: flex;
 }
 
 .slider__item::after {
   position: absolute;
-  top: 80px;
+  top: 230px;
   right: 49px;
   font-weight: 800;
   font-size: 180px;
   text-align: right;
   color: #ffffff;
+  z-index: -1;
 }
 
 .slider__item:first-child::after {
@@ -347,16 +350,24 @@ img {
   position: absolute;
   background-color: #ffe17f;
   width: 100%;
-  height: 150px;
+  height: 300px;
   z-index: -1;
 }
 
+.slider-item__image {
+  padding-top: 150px;
+}
+
 .slider-item__description-wrapper {
-  padding-top: 121px;
+  padding-top: 271px;
 }
 
 .slider-item__description {
   color: #444444;
+}
+
+.slider-item__promo-text {
+  margin: 0;
 }
 
 .slider-item__feature-name {
@@ -661,18 +672,46 @@ img {
     center / 15px 14px no-repeat;
 }
 
+/* Catalog container */
+.catalog-page__container {
+  margin: 37px auto 49px auto;
+  padding-left: 60px;
+  width: 1100px;
+}
+
+.catalog-page__title {
+  margin: 0 0 14px 0;
+}
+
 /* Breadcrumbs */
 .breadcrumbs {
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
   list-style-type: none;
+  gap: 36px;
 }
 
 .breadcrumbs-link {
-  font-style: 16px;
+  font-size: 16px;
   line-height: 19px;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: "";
+  width: 4px;
+  height: 7px;
+  top: 13px;
+  right: -20px;
+  position: absolute;
+  background: #fff url("/img/icons/breadcrumb-arrow.svg") center / 4px 7px no-repeat;
+  opacity: 0.2;
 }
 
 /* Catalog page */
@@ -690,11 +729,6 @@ img {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-}
-
-.catalog-page__container {
-  width: 1160px;
-  margin: 0 auto;
 }
 
 .catalog-page__filters {
