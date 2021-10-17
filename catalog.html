@@ -193,117 +193,123 @@
           </div>
         </form>
         <div class="catalog-page__column">
-          <div class="catalog-page__sorting-container">
-            <form class="catalog-page__sorting" method="get" action="https://echo.htmlacademy.ru/">
-              <p class="sorting__title form-title">
-                сортировка:
-              </p>
-              <label class="visually-hidden" for="sorting">
-                Сортировка
-              </label>
-              <select class="sorting__type" name="sorting" id="sorting">
-                <option value="popular" selected>
-                  Сначала популярные
-                </option>
-                <option value="cheap">
-                  Сначала дешёвые
-                </option>
-                <option value="expensive">
-                  Сначала дорогие
-                </option>
-              </select>
-              <button class="visually-hidden" type="submit">
-                Отсортировать
-              </button>
-            </form>
-            <a class="catalog-page__abs-sorting-button-wrapper" href="#">
-              <div class="catalog-page__abs-sorting-button catalog-page__sorting-button--active"></div>
-              <span class="visually-hidden">
-                Отсортировать в обычном порядке.
-              </span>
-            </a>
-            <a class="catalog-page__desc-sorting-button-wrapper" href="#">
-              <div class="catalog-page__desc-sorting-button"></div>
-              <span class="visually-hidden">
-                Отсортировать в обратном порядке.
-              </span>
-            </a>
+          <div class="catalog-page__sorting">
+            <div class="catalog-page__sorting-container">
+              <form class="catalog-page__sorting-by-type" method="get" action="https://echo.htmlacademy.ru/">
+                <p class="sorting-by-type__title form-title">
+                  сортировка:
+                </p>
+                <label class="visually-hidden" for="sorting">
+                  Сортировка
+                </label>
+                <select class="sorting__type" name="sorting" id="sorting">
+                  <option class="sorting__option" value="popular" selected>
+                    Сначала популярные
+                  </option>
+                  <option class="sorting__option" value="cheap">
+                    Сначала дешёвые
+                  </option>
+                  <option class="sorting__option" value="expensive">
+                    Сначала дорогие
+                  </option>
+                </select>
+                <button class="visually-hidden" type="submit">
+                  Отсортировать
+                </button>
+              </form>
+              <div class="catalog-page__sorting-order">
+                <a class="catalog-page__abs-sorting-button-wrapper" href="#">
+                  <div class="catalog-page__abs-sorting-button catalog-page__sorting-button--active"></div>
+                  <span class="visually-hidden">
+                    Отсортировать в обычном порядке.
+                  </span>
+                </a>
+                <a class="catalog-page__desc-sorting-button-wrapper" href="#">
+                  <div class="catalog-page__desc-sorting-button"></div>
+                  <span class="visually-hidden">
+                    Отсортировать в обратном порядке.
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
           <div class="catalog-page__products-wrapper">
             <div class="catalog-page__products">
               <div class="product">
                 <a class="product__link" href="#">
-                  <img class="product__image" src="img/products/monopod-fan.png" width="360" height="360"
+                  <img class="product__image" src="img/products/monopod-fan.png" width="360" height="380"
                     alt="Любительская селфи-палка.">
-                  <span class="product__more-button visually-hidden button">
+                  <span class="product__more-button button">
                     Подробнее
                   </span>
+                  <div class="product__details">
+                    <h3 class="product__title">
+                      Любительская селфи-палка
+                    </h3>
+                    <span class="product__price">
+                      500 ₽
+                    </span>
+                  </div>
                 </a>
-                <div class="product__details">
-                  <h3 class="product__title">
-                    Любительская селфи-палка
-                  </h3>
-                  <span class="product__price">
-                    500 ₽
-                  </span>
-                </div>
               </div>
               <div class="product">
                 <a class="product__link" href="#">
-                  <img class="product__image" src="img/products/monopod-pro.png" width="360" height="360"
+                  <img class="product__image" src="img/products/monopod-pro.png" width="360" height="380"
                     alt="Профессиональная селфи-палка.">
-                  <span class="product__more-button visually-hidden button">
+                  <span class="product__more-button button">
                     Подробнее
                   </span>
+
+                  <div class="product__details">
+                    <h3 class="product__title">
+                      Профессиональная селфи-палка
+                    </h3>
+                    <span class="product__price">
+                      1 500 ₽
+                    </span>
+                  </div>
                 </a>
-                <div class="product__details">
-                  <h3 class="product__title">
-                    Профессиональная селфи-палка
-                  </h3>
-                  <span class="product__price">
-                    1 500 ₽
-                  </span>
-                </div>
               </div>
               <div class="product">
                 <a class="product__link" href="#">
-                  <img class="product__image" src="img/products/monopod-underwater.png" width="360" height="360"
+                  <img class="product__image" src="img/products/monopod-underwater.png" width="360" height="380"
                     alt="Непотопляемая селфи-палка.">
-                  <span class="product__more-button visually-hidden button">
+                  <span class="product__more-button button">
                     Подробнее
                   </span>
+
+                  <div class="product__details">
+                    <h3 class="product__title">
+                      Непотопляемая
+                      селфи-палка
+                    </h3>
+                    <span class="product__price">
+                      2 500 ₽
+                    </span>
+                  </div>
                 </a>
-                <div class="product__details">
-                  <h3 class="product__title">
-                    Непотопляемая
-                    селфи-палка
-                  </h3>
-                  <span class="product__price">
-                    2 500 ₽
-                  </span>
-                </div>
               </div>
               <div class="product">
                 <a class="product__link" href="#">
-                  <img class="product__image" src="img/products/monopod-follow-me.png" width="360" height="360"
+                  <img class="product__image" src="img/products/monopod-follow-me.png" width="360" height="380"
                     alt="Селфи-палка «Следуй за мной».">
-                  <span class="product__more-button visually-hidden button">
+                  <span class="product__more-button button">
                     Подробнее
                   </span>
+                  <div class="product__details">
+                    <h3 class="product__title">
+                      Селфи-палка «Следуй за мной»
+                    </h3>
+                    <span class="product__price">
+                      4 900 ₽
+                    </span>
+                  </div>
+                  <div class="product__label-wrapper">
+                    <span class="product__label">
+                      New
+                    </span>
+                  </div>
                 </a>
-                <div class="product__details">
-                  <h3 class="product__title">
-                    Селфи-палка «Следуй за мной»
-                  </h3>
-                  <span class="product__price">
-                    4 900 ₽
-                  </span>
-                </div>
-                <div class="product__label-wrapper">
-                  <span class="product__label">
-                    New
-                  </span>
-                </div>
               </div>
             </div>
             <button class="catalog-page__load-more-button button--outlined">
