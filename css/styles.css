@@ -530,7 +530,11 @@ img {
 /* About */
 .main__about,
 .main__contacts {
+  padding-bottom: 87px;
   width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .about__line,
@@ -540,50 +544,119 @@ img {
   background-color: #000000;
 }
 
-.about__text,
+.about__title,
+.contacts__title {
+  margin: 42px 0 26px 0;
+}
+
 .about__delivery-options {
+  color: #444444;
+  flex-grow: 1;
+}
+
+.about__text {
+  margin-top: 0;
   color: #444444;
 }
 
+.about__delivery-companies {
+  margin-top: 23px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .about__delivery-companies-item {
+  position: relative;
+  padding-bottom: 25px;
+  padding-left: 34px;
   font-weight: 700;
   line-height: 20px;
 }
 
-/* Contacts */
-.contacts__schedule {
-  list-style-type: none;
+.about__delivery-companies-item::before {
+  content: "";
+  margin-right: 22px;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 0px;
+  top: 6px;
+  background-color: #FFC700;
+  border-radius: 50%;
 }
 
-.contacts__text,
-.contacts__contacts-item,
-.contacts__schedule-item {
+.about__more-link,
+.contacts__write-button {
+  margin-top: 52px;
+}
+
+/* Contacts */
+.contacts__subtitle {
+  margin: 15px 0;
+}
+
+.contacts__schedule {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__text {
+  margin-top: 0;
   color: #444444;
   font-style: normal;
 }
 
+.contacts__contacts-item,
+.contacts__schedule-item {
+  margin: 0;
+  color: #444444;
+  font-style: normal;
+}
+
+.contacts__contacts {
+  margin-bottom: 30px;
+}
+
 /* Subscribe */
 .main__subscribe {
+  padding: 75px 0 131px 0;
   background-color: #f0f0f0;
 }
 
 .subscribe__container {
   margin: 0 auto;
   width: 1160px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 50px;
+  align-items: center;
+}
+
+.subscribe__title {
+  margin: 0;
+  grid-column: span 2;
 }
 
 .subscribe__text {
+  margin: 0;
+  grid-column: span 2;
   color: #444444;
 }
 
 .subscribe__form {
   display: flex;
+  justify-content: stretch;
+  grid-column: span 3;
 }
 
 .subscribe__form-field {
-  width: 601px;
+  max-width: 580px;
   height: 55px;
   padding: 0;
+  flex-grow: 1;
+  font-size: 18px;
   box-sizing: border-box;
   background: transparent;
   border: none;
@@ -592,11 +665,13 @@ img {
 
 .subscribe__form-field::placeholder {
   color: rgba(68, 68, 68, 0.5);
+  font-size: 18px;
 }
 
 .subscribe__for-free-tip {
-  position: relative;
   padding-left: 35px;
+  margin-left: auto;
+  position: relative;
   color: #444444;
 }
 
@@ -606,6 +681,8 @@ img {
   width: 14px;
   height: 14px;
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   background: url("/img/icons/done.svg") center / 14px 14px no-repeat;
 }
 
