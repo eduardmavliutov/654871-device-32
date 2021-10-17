@@ -59,8 +59,9 @@ img {
 }
 
 .button {
-  min-width: 160px;
   height: 20px;
+  display: block;
+  position: relative;
   font-family: "Raleway";
   font-weight: 800;
   line-height: 21px;
@@ -71,6 +72,17 @@ img {
   text-decoration: none;
   border: none;
   background: none;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  left: 0;
+  top: 7px;
+  background-color: #FFE17F;
+  z-index: -1;
 }
 
 .button--active {
@@ -359,6 +371,10 @@ img {
   padding-top: 150px;
 }
 
+.slider-item__link {
+  width: 220px;
+}
+
 .slider-item__description-wrapper {
   padding-top: 271px;
 }
@@ -588,6 +604,7 @@ img {
 
 .about__more-link,
 .contacts__write-button {
+  width: 260px;
   margin-top: 52px;
 }
 
@@ -902,6 +919,10 @@ img {
   margin-right: 69px;
 }
 
+.filters__submit {
+  width: 200px;
+}
+
 .filter__name {
   font-weight: bold;
   line-height: 20px;
@@ -1064,6 +1085,7 @@ img {
 }
 
 .product__more-button {
+  width: 180px;
   position: absolute;
   left: 50%;
   top: 180px;
