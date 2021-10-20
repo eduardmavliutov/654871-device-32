@@ -159,23 +159,14 @@ img {
   margin: 0;
   position: relative;
   flex-basis: 540px;
-}
-
-.search__input:hover::placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.search__input:focus {
-  outline: none;
-  border: 2px solid #af4fff;
-  border-radius: 20px;
+  display: flex;
 }
 
 .header__search:before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 20px;
   transform: translateY(-50%);
   width: 15px;
   height: 15px;
@@ -185,13 +176,77 @@ img {
 
 .search__input {
   padding: 10px 16px 10px 52px;
-  width: 516px;
+  flex-grow: 1;
   box-sizing: border-box;
   border: none;
   background-color: transparent;
-  color: rgba(0, 0, 0, 0.3);
+  color: #000;
   font-size: 16px;
   line-height: 19px;
+}
+
+.search__input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search__input::-webkit-search-cancel-button { 
+  -webkit-appearance:none;
+}
+
+.search__input:focus {
+  padding: 8px 16px 8px 52px;
+  outline: none;
+  border: 2px solid #af4fff;
+  border-radius: 20px;
+}
+
+.search__input:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search__input:active::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search__input:focus ~ .search__submit {
+  opacity: 1;
+}
+
+.search__submit {
+  padding: 8px 0;
+  position: absolute;
+  width: 160px;
+  height: 100%;
+  right: 0;
+  background-color: unset;
+  border: 2px solid transparent;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 19px;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+.search__submit:focus {
+  outline: none;
+  border-color: #af4fff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.search__submit:hover {
+  background-color: #000;
+  color: #fff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.search__submit:active {
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .user-navigation__item:first-child {
@@ -199,11 +254,15 @@ img {
 }
 
 .user-navigation__link {
+  padding: 8px 0 8px 40px;
+  width: 100%;
   position: relative;
   color: inherit;
   font-size: 16px;
   line-height: 19px;
   text-decoration: inherit;
+  border: 2px solid transparent;
+  border-radius: 20px;
 }
 
 .user-navigation__link--logout {
@@ -212,15 +271,18 @@ img {
 }
 
 .user-navigation__link--user {
-  padding-left: 25px;
+  padding-left: 44px;
+  padding-right: 19px;
 }
 
 .user-navigation__link--compare {
-  padding-left: 20px;
+  padding-left: 41px;
+  padding-right: 19px;
 }
 
 .user-navigation__link--cart {
-  padding-left: 41px;
+  padding-left: 42px;
+  padding-right: 18px;
   margin-left: 47px;
 }
 
@@ -235,6 +297,7 @@ img {
 }
 
 .user-navigation__link--user::before {
+  left: 19px;
   width: 13px;
   height: 12px;
   background: #ffe17f url("../img/icons/header/user.svg") no-repeat center /
@@ -242,6 +305,7 @@ img {
 }
 
 .user-navigation__link--compare::before {
+  left: 19px;
   width: 10px;
   height: 12px;
   background: #ffe17f url("../img/icons/header/compare.svg") no-repeat center /
@@ -252,7 +316,7 @@ img {
   width: 16px;
   height: 14px;
   top: 50%;
-  left: 15px;
+  left: 18px;
   transform: translateY(-50%);
   background: #ffe17f url("../img/icons/header/cart.svg") no-repeat center /
     contain;
@@ -263,13 +327,27 @@ img {
   position: absolute;
   width: 21px;
   height: 21px;
-  left: 0;
-  top: 0;
+  left: 3px;
+  top: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   background-color: #fff;
+}
+
+.user-navigation__link:focus {
+  outline: none;
+  border-color: #af4fff;
+}
+
+.user-navigation__link:hover {
+  opacity: 0.6;
+}
+
+.user-navigation__link:active {
+  border-color: transparent;
+  opacity: 0.3;
 }
 
 .main-navigation {
@@ -321,7 +399,7 @@ img {
 
 .main-navigation__link {
   display: block;
-  padding: 14px 20px 15px;
+  padding: 12px 18px 13px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
@@ -329,6 +407,7 @@ img {
   text-transform: uppercase;
   text-decoration: inherit;
   box-sizing: border-box;
+  border: 2px solid transparent;
   color: inherit;
 }
 
@@ -337,8 +416,7 @@ img {
 }
 
 .main-navigation__link:focus {
-  border: 2px solid #af4fff;
-  box-sizing: border-box;
+  border-color: #af4fff;
   border-radius: 25px;
   outline: none;
 }
