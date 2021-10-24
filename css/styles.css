@@ -228,6 +228,10 @@ img {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.search__input:active {
+  border: 2px solid #000;
+}
+
 .search__input:focus ~ .search__submit {
   opacity: 1;
 }
@@ -1028,6 +1032,24 @@ img {
   font-size: 18px;
 }
 
+.subscribe__form-field:focus {
+  outline: none;
+  background-color: #dcdcdc;
+  transition: 0.2s all ease-in;
+}
+
+.subscribe__form-field:hover {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.subscribe__form-field:active {
+  border-color: #000;
+}
+
+.subscribe__form-field:invalid {
+  border-color: #FF3D3D;
+}
+
 .subscribe__for-free-tip {
   padding-left: 35px;
   margin-left: auto;
@@ -1048,6 +1070,23 @@ img {
 
 .subscribe__form-submit {
   width: 260px;
+  transition: 0.2s all ease-in;
+}
+
+.subscribe__form-submit:focus {
+  border-color: #AF4FFF;
+}
+
+.subscribe__form-submit:hover {
+  color: #fff;
+  border-color: #000;
+  background-color: #000;
+}
+
+.subscribe__form-submit:active {
+  color: rgba(255, 255, 255, 0.3);
+  border-color: #000;
+  background-color: #000;
 }
 
 /* Footer */
