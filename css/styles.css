@@ -89,7 +89,7 @@ img {
 }
 
 .button:focus::after {
-  background-color: #AF4FFF;;
+  background-color: #af4fff;
 }
 
 .button:focus {
@@ -689,6 +689,7 @@ img {
   width: 160px;
   height: 253px;
 }
+
 .catalog__image-wrapper {
   width: 160px;
   height: 160px;
@@ -696,6 +697,8 @@ img {
   justify-content: center;
   align-items: center;
   background-color: #ffe17f;
+  box-sizing: border-box;
+  transition: 0.2s all ease-in;
 }
 
 .catalog__image--monopod {
@@ -709,6 +712,40 @@ img {
   letter-spacing: -0.02em;
   color: inherit;
   text-decoration: none;
+}
+
+.catalog__link:hover .catalog__image-wrapper {
+  background-color: #ffc700;
+}
+
+.catalog__link:focus {
+  outline: none;
+}
+
+.catalog__link:focus .catalog__image-wrapper {
+  outline: 5px solid #AF4FFF;
+}
+
+.catalog__link:focus .catalog__text {
+  color: #AF4FFF;
+}
+
+.catalog__link:active {
+  outline: none;
+}
+
+.catalog__link:active .catalog__image-wrapper {
+  background-color: #ffc700;
+  outline: none;
+}
+
+.catalog__link:active .catalog__text {
+  opacity: 0.3;
+  color: #000;
+}
+
+.catalog__text {
+  transition: 0.2s all ease-in;
 }
 
 /* Services */
