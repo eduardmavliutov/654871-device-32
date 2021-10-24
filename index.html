@@ -12,7 +12,7 @@
 
 <body>
   <header class="page__header">
-    <div class="header__container">
+    <div class="header__container header__container--main-page">
       <img class="header__logo" src="img/logo-header.svg" width="145" height="36" alt="Логотип магазина Device.">
       <nav class="header__navigation">
         <form class="header__search" method="get" action="https://echo.htmlacademy.ru/">
@@ -93,24 +93,24 @@
                 <a class="slider-item__link button" href="#">
                   Подробнее
                 </a>
-                <table class="slider-item__features-table">
-                  <tr class="slider-item__features-header">
-                    <th class="slider-item__feature-name">
+                <ul class="slider-item__features-table">
+                  <li class="slider-item__feature-column">
+                    <span class="slider-item__feature-name">
                       Дальность полета
-                    </th>
-                    <th class="slider-item__feature-name">
-                      Радиус поражения
-                    </th>
-                  </tr>
-                  <tr class="slider-item__features-row">
-                    <td class="slider-item__feature-text">
+                    </span>
+                    <span class="slider-item__feature-text">
                       800 м
-                    </td>
-                    <td class="slider-item__feature-text">
+                    </span>
+                  </li>
+                  <li class="slider-item__feature-column">
+                    <span class="slider-item__feature-name">
+                      Радиус поражения
+                    </span>
+                    <span class="slider-item__feature-text">
                       50 м
-                    </td>
-                  </tr>
-                </table>
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="slider__item">
@@ -130,18 +130,16 @@
                 <a class="slider-item__link button" href="#">
                   Подробнее
                 </a>
-                <table class="slider-item__features-table">
-                  <tr class="slider-item__features-header">
-                    <th class="slider-item__feature-name">
+                <ul class="slider-item__features-table">
+                  <li class="slider-item__feature-column">
+                    <span class="slider-item__feature-name">
                       Без подзарядки
-                    </th>
-                  </tr>
-                  <tr class="slider-item__features-row">
-                    <td class="slider-item__feature-text">
+                    </span>
+                    <span class="slider-item__feature-text">
                       48 часов
-                    </td>
-                  </tr>
-                </table>
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="slider__item">
@@ -161,30 +159,32 @@
                 <a class="slider-item__link button" href="#">
                   Подробнее
                 </a>
-                <table class="slider-item__features-table">
-                  <tr class="slider-item__features-header">
-                    <th class="slider-item__feature-name">
+                <ul class="slider-item__features-table">
+                  <li class="slider-item__feature-column">
+                    <span class="slider-item__feature-name">
                       Длина палки
-                    </th>
-                    <th class="slider-item__feature-name">
-                      Вес палки
-                    </th>
-                    <th class="slider-item__feature-name">
-                      Материал
-                    </th>
-                  </tr>
-                  <tr class="slider-item__features-row">
-                    <td class="slider-item__feature-text">
+                    </span>
+                    <span class="slider-item__feature-text">
                       8,5 м
-                    </td>
-                    <td class="slider-item__feature-text">
+                    </span>
+                  </li>
+                  <li class="slider-item__feature-column">
+                    <span class="slider-item__feature-name">
+                      Вес палки
+                    </span>
+                    <span class="slider-item__feature-text">
                       5 кг
-                    </td>
-                    <td class="slider-item__feature-text">
+                    </span>
+                  </li>
+                  <li class="slider-item__feature-column">
+                    <span class="slider-item__feature-name">
+                      Материал
+                    </span>
+                    <span class="slider-item__feature-text">
                       Карбон
-                    </td>
-                  </tr>
-                </table>
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -199,8 +199,8 @@
             </span>
           </button>
           <ol class="slider__pagination">
-            <li class="slider__pagination-item slider__pagination-item--active">
-              <button class="slider__pagination-button">
+            <li class="slider__pagination-item">
+              <button class="slider__pagination-button slider__pagination-button--active">
                 <span class="visually-hidden">
                   1 фото
                 </span>
