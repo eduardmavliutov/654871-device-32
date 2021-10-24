@@ -294,6 +294,7 @@ img {
   text-decoration: inherit;
   border: 2px solid transparent;
   border-radius: 20px;
+  transition: 0.2s all ease-in;
 }
 
 .user-navigation__link--logout {
@@ -408,6 +409,7 @@ img {
   background: transparent url("../img/icons/plus.svg") 50% 50% / 16px 16px
     no-repeat;
   opacity: 0.2;
+  transition: 0.2s all ease-in;
 }
 
 .main-navigation__item--catalog .main-navigation__link {
@@ -439,6 +441,7 @@ img {
   box-sizing: border-box;
   border: 2px solid transparent;
   color: inherit;
+  transition: 0.2s all ease-in;
 }
 
 .main-navigation__link:not(:first-child) {
@@ -723,11 +726,11 @@ img {
 }
 
 .catalog__link:focus .catalog__image-wrapper {
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid #af4fff;
 }
 
 .catalog__link:focus .catalog__text {
-  color: #AF4FFF;
+  color: #af4fff;
 }
 
 .catalog__link:active {
@@ -800,7 +803,62 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: inherit;
   background-color: #f0f0f0;
+  transition: 0.2s all ease-in;
+}
+
+.shipping-of-rare-products__inner::before {
+  content: "";
+  position: absolute;
+  width: 125px;
+  height: 100px;
+  left: 0;
+  top: 0;
+  background-color: #ffe17f;
+  transition: 0.2s all ease-in;
+}
+
+.shipping-of-rare-products__inner::after {
+  content: "";
+  position: absolute;
+  width: 125px;
+  height: 100px;
+  left: 0;
+  top: 0;
+  background: transparent url("../img/icons/shipping.svg") center / 47px 31px
+    no-repeat;
+  transition: 0.2s all ease-in;
+}
+
+.shipping-of-rare-products__inner:focus {
+  outline: 5px solid #af4fff;
+}
+
+.shipping-of-rare-products__inner:hover {
+  background-color: #ebebeb;
+}
+
+.shipping-of-rare-products__inner:hover::before {
+  background-color: #ffc700;
+}
+
+.shipping-of-rare-products__inner:hover .shipping-of-rare-products__tip-icon {
+  background-image: url("../img/icons/info-black.svg");
+}
+
+.shipping-of-rare-products__inner:active {
+  color: rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.shipping-of-rare-products__inner:active::after {
+  opacity: 0.3;
+}
+
+.shipping-of-rare-products__inner:active .shipping-of-rare-products__tip-icon {
+  background-image: url("../img/icons/info-grey.svg");
 }
 
 .shipping-of-rare-products__text {
@@ -814,18 +872,7 @@ img {
   text-transform: uppercase;
 }
 
-.shipping-of-rare-products__inner::before {
-  content: "";
-  position: absolute;
-  width: 125px;
-  height: 100px;
-  left: 0;
-  top: 0;
-  background: #ffe17f url("../img/icons/shipping.svg") center / 47px 31px
-    no-repeat;
-}
-
-.shipping-of-rare-products__inner::after {
+.shipping-of-rare-products__tip-icon {
   content: "";
   position: absolute;
   width: 40px;
@@ -836,6 +883,7 @@ img {
     2px 12px no-repeat;
   border-radius: 50%;
   transform: translateY(-50%);
+  transition: 0.2s background-image ease-in;
 }
 
 /* About */
