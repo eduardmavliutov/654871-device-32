@@ -1245,9 +1245,8 @@ img {
 
 .footer__contacts .main-navigation {
   margin: 0;
-  margin-left: -100px;
+  margin-left: -85px;
   padding: 0;
-  order: -1;
   flex-grow: 1;
   justify-content: center;
   gap: 20px;
@@ -1259,13 +1258,13 @@ img {
   text-align: center;
 }
 
-.page__footer .main-navigation__link:hover {
+.footer__contacts .main-navigation__link:hover {
   color: #ffc700;
   text-underline-offset: 8px;
   text-decoration: underline #ffc700 2px;
 }
 
-.page__footer .main-navigation__link:active {
+.footer__contacts .main-navigation__link:active {
   border-color: transparent;
   color: #ffc700;
   text-underline-offset: 8px;
