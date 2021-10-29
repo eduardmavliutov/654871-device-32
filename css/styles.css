@@ -196,14 +196,27 @@ img {
 }
 
 .search__input {
-  padding: 10px 16px 10px 52px;
+  padding: 8px 16px 8px 52px;
   flex-grow: 1;
   box-sizing: border-box;
-  border: none;
+  border: 2px solid #000;
+  border-right-width: 1px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   background-color: transparent;
   color: #000;
   font-size: 16px;
   line-height: 19px;
+  transition: 0.2s border-color ease-in;
+}
+
+.search__input:placeholder-shown {
+  border-color: transparent;
+  border-radius: 20px;
+}
+
+.search__input:placeholder-shown ~ .search__submit {
+  display: none;
 }
 
 .search__input::placeholder {
@@ -215,10 +228,8 @@ img {
 }
 
 .search__input:focus {
-  padding: 8px 16px 8px 52px;
   outline: none;
   border: 2px solid #af4fff;
-  border-radius: 20px;
 }
 
 .search__input:hover::placeholder {
@@ -229,34 +240,29 @@ img {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.search__input:active {
-  border: 2px solid #000;
-}
-
-.search__input:focus ~ .search__submit {
-  opacity: 1;
-}
-
 .search__submit {
   padding: 8px 0;
-  position: absolute;
+  /* position: absolute; */
   width: 160px;
   height: 100%;
   right: 0;
+  display: block;
   background-color: unset;
-  border: 2px solid transparent;
+  /* border: none; */
+  border: 2px solid #000;
+  border-left-width: 1px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   font-family: inherit;
   font-size: 16px;
   line-height: 19px;
   box-sizing: border-box;
-  opacity: 0;
+  transition: 0.2s all ease-in;
 }
 
 .search__submit:focus {
   outline: none;
-  border-color: #af4fff;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border: 2px solid#af4fff;
 }
 
 .search__submit:hover {
@@ -269,10 +275,7 @@ img {
 .search__submit:active {
   background-color: #000;
   color: rgba(255, 255, 255, 0.3);
-  border: none;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  opacity: 1;
+  border-color: #000;
 }
 
 .user-navigation {
@@ -435,7 +438,7 @@ img {
 
 .main-navigation__link {
   display: block;
-  padding: 12px 18px 13px;
+  padding: 12px 18px 12px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
@@ -604,6 +607,7 @@ img {
   width: 40px;
   height: 80px;
   border: 2px solid white;
+  z-index: 1;
 }
 
 .slider__button--next {
