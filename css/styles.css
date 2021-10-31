@@ -462,7 +462,7 @@ img {
 }
 
 .main-navigation__link--catalog:active {
-  border: none;
+  border-color: transparent;
   opacity: 0.3;
 }
 
@@ -474,7 +474,7 @@ img {
 .main-navigation__link--delivery:active,
 .main-navigation__link--warranty:active,
 .main-navigation__link--contacts:active {
-  border: none;
+  border-color: transparent;
   text-underline-offset: 8px;
   text-decoration: underline #000 2px;
   opacity: 0.3;
