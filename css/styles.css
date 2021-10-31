@@ -1734,26 +1734,29 @@ img {
   padding: 0;
   margin: 0 0 77px 0;
   list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 28px;
+  display: grid;
+  grid-template-columns: 1fr repeat(5, 38px) 1fr;
+  align-items: baseline;
+  gap: 13px;
   background-color: #ebebeb;
 }
 
 .pagination__link {
-  padding-top: 27px;
-  padding-bottom: 24px;
-  display: block;
+  padding: 8px 15px 10px 15px;
+  display: flex;
+  justify-content: center;
+  border: 5px solid transparent;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   text-decoration: none;
   color: rgba(68, 68, 68, 0.3);
+  transition: 0.2s all ease-in;
 }
 
 .pagination__link--previous-page,
 .pagination__link--next-page {
+  padding: 27px 29px 24px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -1761,4 +1764,39 @@ img {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+}
+
+.pagination__link:focus {
+  outline: none;
+  border-color: #af4fff;
+}
+
+.pagination__link:hover {
+  color: #444444;
+  background-color: #ebebeb;
+}
+
+.pagination__link--previous-page:hover,
+.pagination__link--next-page:hover {
+  background-color: #dcdcdc;
+}
+
+.pagination__link:active {
+  border-color: transparent;
+  color: rgba(68, 68, 68, 0.1);
+}
+
+.pagination__link--previous-page:active,
+.pagination__link--next-page:active {
+  border-color: transparent;
+  color: rgba(68, 68, 68, 0.3);
+  background-color: #dcdcdc;
+}
+
+.pagination__item:first-child {
+  justify-self: start;
+}
+
+.pagination__item:last-child {
+  justify-self: end;
 }
