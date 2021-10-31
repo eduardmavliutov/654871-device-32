@@ -1448,11 +1448,14 @@ img {
 
 .catalog-page__filters {
   width: 33%;
+  display: grid;
+  grid-template-rows: 70px 1fr;
   background-color: #e5e5e5;
+  z-index: 1;
 }
 
 .form-title {
-  width: 100%;
+  margin-right: 69px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -1474,19 +1477,26 @@ img {
   border-top: 2px solid #000;
 }
 
-.filters__title {
-  margin: 0;
+.filters__title-container {
   width: 100%;
-  padding: 25px 32px 25px 200px;
-  display: block;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
   background-color: #dcdcdc;
+}
+
+.filters__title {
+  width: 200px;
+  margin: 0 60px 0 0;
+  display: flex;
+  align-items: center;
 }
 
 .filters__container {
   padding-top: 71px;
   width: 200px;
   margin-left: auto;
-  margin-right: 69px;
+  margin-right: 62px;
 }
 
 .filters__submit {
@@ -1515,7 +1525,7 @@ img {
 }
 
 .catalog-page__sorting {
-  padding: 25px 0 25px 72px;
+  padding: 26px 0 25px 69px;
   display: flex;
   align-items: center;
   justify-content: space-between;
