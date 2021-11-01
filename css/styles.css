@@ -116,11 +116,12 @@ img {
 
 .button--outlined {
   height: 55px;
-  padding: 17px 0 18px;
+  padding: 15px 0 18px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   text-align: center;
+  line-height: 21px;
   outline: none;
   background: transparent;
   border: 3px solid rgba(0, 0, 0, 0.1);
@@ -128,17 +129,17 @@ img {
 }
 
 .button--outlined:focus {
-  padding: 15px 0 16px;
+  padding: 13px 0 16px;
   border: 5px solid #af4fff;
 }
 
 .button--outlined:hover {
-  padding: 17px 0 18px;
+  padding: 15px 0 18px;
   border: 3px solid #000;
 }
 
 .button--outlined:active {
-  padding: 17px 0 18px;
+  padding: 15px 0 18px;
   color: rgba(0, 0, 0, 0.3);
   border: 3px solid rgba(0, 0, 0, 0.3);
 }
@@ -1184,6 +1185,7 @@ img {
 
 .subscribe__form-submit {
   width: 260px;
+  font-size: inherit;
   transition: 0.2s all ease-in;
 }
 
@@ -1778,6 +1780,9 @@ img {
 .catalog-page__load-more-button {
   margin-bottom: 51px;
   width: 100%;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
 }
 
 /* Pagination */
