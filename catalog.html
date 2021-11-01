@@ -112,26 +112,35 @@
               <legend class="filter__name">
                 Стоимость
               </legend>
-              <button class="filter__range-toggle-min" type="button">
-                <span class="visually-hidden">
-                  Изменить минимальную цену.
-                </span>
-              </button>
-              <button class="filter__range-toggle-max" type="button">
-                <span class="visually-hidden">
-                  Изменить максимальную цену.
-                </span>
-              </button>
-              <label class="filter__label price-range-label">
-                от
-                <input class="filter__input" type="number" name="min-price">
-                ₽
-              </label>
-              <label class="filter__label price-range-label">
-                до
-                <input class="filter__input" type="number" name="max-price">
-                ₽
-              </label>
+              <div class="range-filter__scale">
+                <div class="range-filter__bar">
+                  <div class="range-filter__toggle-wrapper range-filter__toggle-wrapper--min">
+                    <button class="range-filter__toggle range-filter__toggle--min" type="button">
+                      <span class="visually-hidden">
+                        Изменить минимальную цену.
+                      </span>
+                    </button>
+                    <label class="range-filter__price-range-label range-filter__price-range-label--min" for="range-min">
+                      от
+                    </label>
+                    <input class="range-filter__input range-filter__input--min" type="number" name="min-price" value="0"
+                      id="range-min">
+                  </div>
+                  <div class="range-filter__toggle-wrapper range-filter__toggle-wrapper--max">
+                    <button class="range-filter__toggle range-filter__toggle--max" type="button">
+                      <span class="visually-hidden">
+                        Изменить максимальную цену.
+                      </span>
+                    </button>
+                    <label class="range-filter__price-range-label range-filter__price-range-label--max" for="range-max">
+                      до
+                    </label>
+                    <input class="range-filter__input range-filter__input--max" type="number" name="max-price"
+                      value="5000" id="range-max">
+                  </div>
+
+                </div>
+              </div>
             </fieldset>
             <fieldset class="filter__wrapper">
               <legend class="filter__name">
@@ -224,7 +233,9 @@
               </form>
               <div class="catalog-page__sorting-order">
                 <a class="catalog-page__sorting-button-wrapper" href="#">
-                  <div class="catalog-page__abs-sorting-button catalog-page__sorting-button catalog-page__sorting-button--active"></div>
+                  <div
+                    class="catalog-page__abs-sorting-button catalog-page__sorting-button catalog-page__sorting-button--active">
+                  </div>
                   <span class="visually-hidden">
                     Отсортировать в обычном порядке.
                   </span>
