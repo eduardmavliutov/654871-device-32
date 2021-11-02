@@ -1493,10 +1493,18 @@ img {
 
 .filter__wrapper {
   display: flex;
-  margin: 0;
+  margin: 0 0 45px 0;
   padding: 0;
   flex-direction: column;
   border: none;
+}
+
+.filter__wrapper:first-child {
+  margin-bottom: 61px;
+}
+
+.filter__label {
+  position: relative;
 }
 
 .filter__name {
@@ -1547,15 +1555,87 @@ img {
   letter-spacing: -0.02em;
 }
 
+.filter__mark {
+  position: absolute;
+  
+  top: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  
+  transform: translateY(-50%);
+  transition: 0.2s border-color ease-in;
+}
+
+.filter__mark--checkbox {
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.filter__mark--radio {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.filter__mark--radio::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  content: "";
+}
+
 .filter__label-text {
+  margin-left: 37px;
   font-size: 16px;
   line-height: 19px;
+}
+
+.filter__input[type="checkbox"]:checked + .filter__mark--checkbox,
+.filter__input[type="radio"]:checked + .filter__mark--radio {
+  border-color: #000;
+}
+
+.filter__input[type="checkbox"]:checked + .filter__mark--checkbox path,
+.filter__input[type="radio"]:checked + .filter__mark--radio::before {
+  opacity: 1;
+}
+
+.filter__input[type="radio"]:focus + .filter__mark,
+.filter__input[type="checkbox"]:focus + .filter__mark {
+  border-color: #af4fff;
+}
+
+.filter__input[type="checkbox"]:focus + .filter__mark path {
+  fill: #af4fff;
+}
+
+.filter__input[type="radio"]:focus + .filter__mark::before {
+  background-color: #af4fff;
+}
+
+.filter__input:focus ~ .filter__label-text {
+  color: #af4fff;
+}
+
+.filter__input:hover + .filter__mark,
+.filter__input:hover ~ .filter__label-text {
+  opacity: 0.5;
+}
+
+.filter__input:active + .filter__mark,
+.filter__input:active ~ .filter__label-text {
+  opacity: 0.2;
 }
 
 .range-filter__scale {
   position: relative;
   margin-top: 9px;
-  margin-bottom: 70px;
+  margin-bottom: 9px;
   width: 100%;
   height: 2px;
   background-color: #dcdcdc;
