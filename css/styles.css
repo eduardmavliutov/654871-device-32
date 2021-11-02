@@ -253,6 +253,10 @@ img {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.search__input:hover {
+  cursor: pointer;
+}
+
 .search__submit {
   padding: 8px 0;
   width: 160px;
@@ -1774,6 +1778,7 @@ img {
 .sorting__type {
   padding: 4px 41px 7px 13px;
   position: relative;
+  font-family: inherit;
   font-size: 16px;
   line-height: 19px;
   background: none;
@@ -1999,7 +2004,7 @@ img {
 
 .pagination__link--previous-page,
 .pagination__link--next-page {
-  padding: 27px 29px 24px;
+  padding: 22px 29px 19px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
