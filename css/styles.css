@@ -487,7 +487,7 @@ img {
   display: grid;
 }
 
-.main-navigation__link--catalog:hover::before {
+.main-navigation__item--catalog:hover .main-navigation__link--catalog::before {
   background-image: url("../img/icons/minus.svg");
   opacity: 1;
 }
@@ -558,6 +558,7 @@ img {
   border: 2px solid transparent;
   box-sizing: border-box;
   border-radius: 25px;
+  transition: 0.2s all ease-in;
 }
 
 /* Main */
