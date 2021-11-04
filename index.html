@@ -22,20 +22,67 @@
           </button>
         </form>
         <ul class="user-navigation">
-          <li class="user-navigation__item">
+          <li class="user-navigation__item user-navigation__item--user">
             <a class="user-navigation__link user-navigation__link--user" href="#">
               Войти
             </a>
           </li>
-          <li class="user-navigation__item">
+          <li class="user-navigation__item user-navigation__item--compare">
             <a class="user-navigation__link user-navigation__link--compare" href="#">
               Сравнить
             </a>
           </li>
-          <li class="user-navigation__item">
+          <li class="user-navigation__item user-navigation__item--cart">
             <a class="user-navigation__link user-navigation__link--cart" href="#">
               Корзина
             </a>
+            <div class="cart__popup">
+              <ul class="cart__list">
+                <li class="cart__item">
+                  <a class="cart__item-link" href="# ">
+                    <img class="cart__item-image" src="img/cart/monopod-fan--small.jpg" width="41" height="43">
+                    <p class="cart__item-title">
+                      Любительская селфи-палка
+                    </p>
+                  </a>
+                  <button class="cart__delete-button">
+                    <span class="visually-hidden">
+                      Удалить товар из корзины
+                    </span>
+                  </button>
+                </li>
+                <li class="cart__item">
+                  <a class="cart__item-link" href="#">
+                    <img class="cart__item-image" src="img/cart/monopod-pro--small.jpg" width="41" height="43">
+                    <p class="cart__item-title">
+                      Профессиональная селфи-палка
+                    </p>
+                  </a>
+                  <button class="cart__delete-button">
+                    <span class="visually-hidden">
+                      Удалить товар из корзины
+                    </span>
+                  </button>
+                </li>
+              </ul>
+              <dl class="cart__summary">
+                <dt class="cart__summary-item cart__summary-item--products-count">
+                  Товаров:&nbsp;
+                </dt>
+                <dd class="cart__summary-value">
+                  2
+                </dd>
+                <dt class="cart__summary-item cart__summary-item--total-sum">
+                  Сумма:&nbsp;
+                </dt>
+                <dd class="cart__summary-value">
+                  2000 ₽
+                </dd>
+              </dl>
+              <button class="cart__open-cart-button button button--white">
+                Открыть корзину
+              </button>
+            </div>
           </li>
         </ul>
         <ul class="main-navigation">
