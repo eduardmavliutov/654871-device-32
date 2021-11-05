@@ -45,7 +45,7 @@
                       Любительская селфи-палка
                     </p>
                   </a>
-                  <button class="cart__delete-button">
+                  <button class="cart__delete-button" type="button">
                     <span class="visually-hidden">
                       Удалить товар из корзины
                     </span>
@@ -58,7 +58,7 @@
                       Профессиональная селфи-палка
                     </p>
                   </a>
-                  <button class="cart__delete-button">
+                  <button class="cart__delete-button" type="button">
                     <span class="visually-hidden">
                       Удалить товар из корзины
                     </span>
@@ -79,7 +79,7 @@
                   2000 ₽
                 </dd>
               </dl>
-              <button class="cart__open-cart-button button button--white">
+              <button class="cart__open-cart-button button button--white" type="button">
                 Открыть корзину
               </button>
             </div>
@@ -543,6 +543,91 @@
         </span>
       </div>
     </section>
+    <div class="delivery-popup__wrapper">
+      <form class="delivery-popup" method="post" action="https://echo.htmlacademy.ru/">
+        <h2 class="delivery-popup__title title">
+          Доставка под заказ
+        </h2>
+        <button class="delivery-popup__close-button" type="button">
+          <span class="visually-hidden">
+            Закрыть окно "Доставка под заказ".
+          </span>
+        </button>
+        <label class="delivery-popup__label delivery-popup__label--name">
+          Ваше имя:
+          <input class="delivery-popup__input delivery-popup__input--name" name="name" type="text"
+            placeholder="Имя Фамилия" required>
+          <span class="delivery-popup__input-icon delivery-popup__input-icon--name"></span>
+          <span class="delivery-popup__input-message delivery-popup__input-message--invalid">
+            Пожалуйста, представьтесь
+          </span>
+          <span class="delivery-popup__input-message delivery-popup__input-message--valid">
+            Приятно познакомиться!
+          </span>
+        </label>
+        <label class="delivery-popup__label delivery-popup__label--email">
+          Ваш e-mail:
+          <input class="delivery-popup__input delivery-popup__input--email" name="email" type="email"
+            placeholder="E-mail" required value="krasotka92@mail.ru">
+          <span class="delivery-popup__input-icon delivery-popup__input-icon--email"></span>
+          <span class="delivery-popup__input-message delivery-popup__input-message--invalid">
+            Пожалуйста, введите e-mail
+          </span>
+          <span class="delivery-popup__input-message delivery-popup__input-message--valid">
+            Забавный у вас адрес
+          </span>
+        </label>
+        <label class="delivery-popup__label delivery-popup__label--order">
+          Что нужно привезти:
+          <input class="delivery-popup__input delivery-popup__input--order" name="order" type="text"
+            placeholder="В свободной форме">
+        </label>
+        <label class="delivery-popup__label delivery-popup__label--quantity">
+          Количество:
+          <span class="delivery-popup__input-tooltip">
+            <svg class="delivery-popup__input-tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="none"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path d="M2 0H0V2H2V0Z" fill="black" />
+              <path d="M2 4H0V12H2V4Z" fill="black" />
+            </svg>
+            <span class="delivery-popup__input-tooltip-text">
+              Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+            </span>
+          </span>
+          <div class="delivery-popup__quantity-wrapper">
+            <button class="delivery-popup__quantity delivery-popup__quantity--minus" type="button">
+              <span class="visually-hidden">
+                Уменьшить количество единиц товара на 1
+              </span>
+              <svg class="delivery-popup__quantity-icon delivery-popup__quantity-icon--minus" width="16" height="2"
+                viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 0H0V2H16V0Z" fill="black" />
+              </svg>
+            </button>
+            <input class="delivery-popup__input delivery-popup__input--quantity" name="quantity" type="number"
+              placeholder="1" required>
+            <button class="delivery-popup__quantity delivery-popup__quantity--plus" type="button">
+              <span class="visually-hidden">
+                Увеличить количество единиц товара на 1
+              </span>
+              <svg class="delivery-popup__quantity-icon .delivery-popup__quantity-icon--plus" width="16" height="16"
+                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black" />
+              </svg>
+            </button>
+            <span class="delivery-popup__input-message delivery-popup__input-message--invalid">
+              Пожалуйста, введите количество
+            </span>
+            <span class="delivery-popup__input-message delivery-popup__input-message--valid">
+              Счастливое число!
+            </span>
+          </div>
+        </label>
+        <button class="delivery-popup__submit button" type="submit">
+          Отправить
+        </button>
+      </form>
+    </div>
   </main>
 
   <footer class="page__footer">
