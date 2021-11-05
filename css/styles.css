@@ -326,6 +326,14 @@ img {
   position: relative;
 }
 
+.user-navigation__item--cart:focus-within .cart__popup {
+  display: flex;
+}
+
+.user-navigation__item--cart:hover .cart__popup {
+  display: flex;
+}
+
 .user-navigation__link {
   padding: 8px 0 8px 40px;
   width: 100%;
@@ -428,15 +436,27 @@ img {
 
 .cart__popup {
   position: absolute;
-  left: -160px;
+  top: 38px;
+  left: -132px;
   z-index: 1;
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 320px;
   font-size: 16px;
   line-height: 20px;
   color: #fff;
   background-color: #000;
+}
+
+.cart__popup::before {
+  content: "";
+  position: relative;
+  top: -5px;
+  left: 153px;
+  width: 14px;
+  height: 6px;
+  background-color: #000;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 .cart__list {
@@ -507,6 +527,7 @@ img {
     no-repeat;
   border: 2px solid #000;
   border-radius: 50%;
+  transition: 0.2s all ease-in;
 }
 
 .cart__delete-button:focus {
