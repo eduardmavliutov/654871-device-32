@@ -191,34 +191,23 @@
               <legend class="filter__name">
                 Стоимость
               </legend>
-              <div class="range-filter__scale">
-                <div class="range-filter__bar">
-                  <div class="range-filter__toggle-wrapper range-filter__toggle-wrapper--min">
-                    <button class="range-filter__toggle range-filter__toggle--min" type="button">
-                      <span class="visually-hidden">
-                        Изменить минимальную цену.
-                      </span>
-                    </button>
-                    <label class="range-filter__price-range-label range-filter__price-range-label--min" for="range-min">
-                      от
-                    </label>
-                    <input class="range-filter__input range-filter__input--min" type="number" name="min-price" value="0"
-                      id="range-min">
-                  </div>
-                  <div class="range-filter__toggle-wrapper range-filter__toggle-wrapper--max">
-                    <button class="range-filter__toggle range-filter__toggle--max" type="button">
-                      <span class="visually-hidden">
-                        Изменить максимальную цену.
-                      </span>
-                    </button>
-                    <label class="range-filter__price-range-label range-filter__price-range-label--max" for="range-max">
-                      до
-                    </label>
-                    <input class="range-filter__input range-filter__input--max" type="number" name="max-price"
-                      value="5000" id="range-max">
-                  </div>
-
-                </div>
+              <div class="range-filter__container">
+                <div class="range-filter__scale"></div>
+                <div class="range-filter__bar"></div>
+                <label class="range-filter__label--min visually-hidden" for="price-min">
+                  Минимальная цена
+                </label>
+                <input class="range-filter__input range-filter__input--min" type="range" name="price-min" id="price-min" value="0" min="0" max="7500">
+                <span class="range-filter__value range-filter__value--min">
+                  от 0
+                </span>
+                <label class="range-filter__label--max visually-hidden" for="price-max">
+                  Максимальная цена
+                </label>
+                <input class="range-filter__input range-filter__input--max" type="range" name="price-max" id="price-max" value="5000" min="0" max="7500">
+                <span class="range-filter__value range-filter__value--max">
+                  до 5000
+                </span>
               </div>
             </fieldset>
             <fieldset class="filter__wrapper">
