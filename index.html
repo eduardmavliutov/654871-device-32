@@ -40,7 +40,8 @@
               <ul class="cart__list">
                 <li class="cart__item">
                   <a class="cart__item-link" href="# ">
-                    <img class="cart__item-image" src="img/cart/monopod-fan--small.jpg" width="41" height="43">
+                    <img class="cart__item-image" src="img/cart/monopod-fan--small.jpg" width="41" height="43"
+                      alt="Любительская селфи-палка.">
                     <p class="cart__item-title">
                       Любительская селфи-палка
                     </p>
@@ -53,7 +54,8 @@
                 </li>
                 <li class="cart__item">
                   <a class="cart__item-link" href="#">
-                    <img class="cart__item-image" src="img/cart/monopod-pro--small.jpg" width="41" height="43">
+                    <img class="cart__item-image" src="img/cart/monopod-pro--small.jpg" width="41" height="43"
+                      alt="Профессиональная селфи-палка">
                     <p class="cart__item-title">
                       Профессиональная селфи-палка
                     </p>
@@ -582,47 +584,47 @@
           <input class="delivery-popup__input delivery-popup__input--order" name="order" type="text"
             placeholder="В свободной форме">
         </label>
-        <label class="delivery-popup__label delivery-popup__label--quantity">
-          Количество:
-          <span class="delivery-popup__input-tooltip">
-            <svg class="delivery-popup__input-tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="none"
-              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-              <path d="M2 0H0V2H2V0Z" fill="black" />
-              <path d="M2 4H0V12H2V4Z" fill="black" />
+        <div class="delivery-popup__quantity-wrapper">
+          <label class="delivery-popup__label delivery-popup__label--quantity">
+            Количество:
+            <span class="delivery-popup__input-tooltip">
+              <svg class="delivery-popup__input-tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M2 0H0V2H2V0Z" fill="black" />
+                <path d="M2 4H0V12H2V4Z" fill="black" />
+              </svg>
+              <span class="delivery-popup__input-tooltip-text">
+                Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+              </span>
+            </span>
+          </label>
+          <button class="delivery-popup__quantity delivery-popup__quantity--minus" type="button">
+            <span class="visually-hidden">
+              Уменьшить количество единиц товара на 1
+            </span>
+            <svg class="delivery-popup__quantity-icon delivery-popup__quantity-icon--minus" width="16" height="2"
+              viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 0H0V2H16V0Z" fill="black" />
             </svg>
-            <span class="delivery-popup__input-tooltip-text">
-              Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+          </button>
+          <input class="delivery-popup__input delivery-popup__input--quantity" name="quantity" type="number"
+            placeholder="1" required>
+          <button class="delivery-popup__quantity delivery-popup__quantity--plus" type="button">
+            <span class="visually-hidden">
+              Увеличить количество единиц товара на 1
             </span>
+            <svg class="delivery-popup__quantity-icon .delivery-popup__quantity-icon--plus" width="16" height="16"
+              viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black" />
+            </svg>
+          </button>
+          <span class="delivery-popup__input-message delivery-popup__input-message--invalid">
+            Введите количество
           </span>
-          <div class="delivery-popup__quantity-wrapper">
-            <button class="delivery-popup__quantity delivery-popup__quantity--minus" type="button">
-              <span class="visually-hidden">
-                Уменьшить количество единиц товара на 1
-              </span>
-              <svg class="delivery-popup__quantity-icon delivery-popup__quantity-icon--minus" width="16" height="2"
-                viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 0H0V2H16V0Z" fill="black" />
-              </svg>
-            </button>
-            <input class="delivery-popup__input delivery-popup__input--quantity" name="quantity" type="number"
-              placeholder="1" required>
-            <button class="delivery-popup__quantity delivery-popup__quantity--plus" type="button">
-              <span class="visually-hidden">
-                Увеличить количество единиц товара на 1
-              </span>
-              <svg class="delivery-popup__quantity-icon .delivery-popup__quantity-icon--plus" width="16" height="16"
-                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black" />
-              </svg>
-            </button>
-            <span class="delivery-popup__input-message delivery-popup__input-message--invalid">
-              Пожалуйста, введите количество
-            </span>
-            <span class="delivery-popup__input-message delivery-popup__input-message--valid">
-              Счастливое число!
-            </span>
-          </div>
-        </label>
+          <span class="delivery-popup__input-message delivery-popup__input-message--valid">
+            Счастливое число!
+          </span>
+        </div>
         <button class="delivery-popup__submit button" type="submit">
           Отправить
         </button>
