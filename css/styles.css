@@ -87,7 +87,7 @@ img {
   width: 100%;
   height: 8px;
   left: 0;
-  top: 20px;
+  top: 21px;
   background-color: #ffe17f;
   z-index: -1;
   transition: 0.2s all ease-in;
@@ -185,7 +185,7 @@ img {
 /* Header */
 .header__container {
   width: 1080px;
-  margin: 40px auto 0 auto;
+  margin: 41px auto 0 auto;
   padding: 36px 40px 40px 40px;
   position: relative;
   color: inherit;
@@ -207,7 +207,6 @@ img {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  row-gap: 29px;
 }
 
 .header__search {
@@ -223,14 +222,14 @@ img {
   top: 50%;
   left: 20px;
   transform: translateY(-50%);
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   background: #ffe17f url("../img/icons/header/search.svg") no-repeat center /
     contain;
 }
 
 .search__input {
-  padding: 8px 16px 8px 52px;
+  padding: 11px 16px 11px 54px;
   flex-grow: 1;
   box-sizing: border-box;
   border: 2px solid #000;
@@ -239,6 +238,7 @@ img {
   border-bottom-left-radius: 20px;
   background-color: transparent;
   color: #000;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 19px;
   transition: 0.2s border-color ease-in;
@@ -310,7 +310,7 @@ img {
 
 .user-navigation {
   flex-basis: 50%;
-  margin: 0;
+  margin: -1px 0 0 0;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -353,18 +353,18 @@ img {
 }
 
 .user-navigation__link--user {
-  padding-left: 44px;
+  padding-left: 43px;
   padding-right: 19px;
 }
 
 .user-navigation__link--compare {
   padding-left: 41px;
-  padding-right: 19px;
+  padding-right: 36px;
 }
 
 .user-navigation__link--cart {
   padding-left: 42px;
-  padding-right: 18px;
+  padding-right: 17px;
 }
 
 .user-navigation__link--user::before,
@@ -372,13 +372,12 @@ img {
 .user-navigation__link--cart::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 0;
   transform: translateY(-50%);
 }
 
 .user-navigation__link--user::before {
-  left: 19px;
+  top: 17px;
+  left: 18px;
   width: 13px;
   height: 12px;
   background: #ffe17f url("../img/icons/header/user.svg") no-repeat center /
@@ -386,7 +385,8 @@ img {
 }
 
 .user-navigation__link--compare::before {
-  left: 19px;
+  top: 17px;
+  left: 22px;
   width: 10px;
   height: 12px;
   background: #ffe17f url("../img/icons/header/compare.svg") no-repeat center /
@@ -396,8 +396,8 @@ img {
 .user-navigation__link--cart::before {
   width: 16px;
   height: 14px;
-  top: 50%;
-  left: 18px;
+  top: 16px;
+  left: 16px;
   transform: translateY(-50%);
   background: #ffe17f url("../img/icons/header/cart.svg") no-repeat center /
     contain;
@@ -408,11 +408,13 @@ img {
   position: absolute;
   width: 21px;
   height: 21px;
-  left: 3px;
+  left: 1px;
   top: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
+  line-height: 16px;
   border-radius: 50%;
   background-color: #fff;
 }
@@ -567,7 +569,7 @@ img {
 }
 
 .main-navigation {
-  margin: 0;
+  margin: 18px 0 0 0;
   padding: 0;
   list-style-type: none;
   flex-basis: 100%;
@@ -583,10 +585,10 @@ img {
 
 .main-navigation__item--catalog .main-navigation__link::before {
   content: "";
-  width: 50px;
-  height: 50px;
-  top: 50%;
-  left: 267px;
+  width: 46px;
+  height: 46px;
+  top: 22px;
+  left: 261px;
   position: absolute;
   border-radius: 50%;
   transform: translateY(-50%);
@@ -603,7 +605,12 @@ img {
   position: relative;
 }
 
+.main-navigation__link--warranty {
+  margin-left: -9px;
+}
+
 .main-navigation__item--contacts {
+  margin-right: -5px;
   flex-grow: 1;
 }
 
@@ -633,10 +640,6 @@ img {
 .main-navigation__link--catalog {
   position: relative;
   z-index: 2;
-}
-
-.main-navigation__link:not(:first-child) {
-  max-width: 140px;
 }
 
 .main-navigation__link:focus {
@@ -735,7 +738,7 @@ img {
 /* Slider */
 .slider {
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 72px;
 }
 
 .slider__item {
@@ -743,7 +746,7 @@ img {
   position: relative;
   width: 1160px;
   height: 560px;
-  gap: 40px;
+  gap: 41px;
 }
 
 .slider__item--active {
@@ -752,7 +755,7 @@ img {
 
 .slider__item::after {
   position: absolute;
-  top: 80px;
+  top: 84px;
   right: 49px;
   font-weight: 800;
   font-size: 180px;
@@ -778,26 +781,30 @@ img {
   position: absolute;
   background-color: #ffe17f;
   width: 100%;
-  height: 150px;
+  height: 152px;
   z-index: -1;
 }
 
 .slider-item__link {
   width: 220px;
-  margin-bottom: 70px;
+  margin-bottom: 54px;
+}
+
+.slider-item__image {
+  margin-top: 2px;
 }
 
 .slider-item__description-wrapper {
-  padding-top: 123px;
+  padding-top: 124px;
 }
 
 .slider-item__promo-text {
-  margin: 0 0 19px 0;
+  margin: 0 0 28px 0;
 }
 
 .slider-item__description {
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
   color: #444444;
 }
 
@@ -824,7 +831,7 @@ img {
 
 .slider-item__feature-text {
   margin: 0;
-  min-height: 52px;
+  min-height: 41px;
   order: -1;
   font-size: 36px;
   font-weight: normal;
@@ -841,16 +848,16 @@ img {
 
 .slider__button--next {
   position: absolute;
-  top: 250px;
-  left: 521px;
+  top: 242px;
+  left: 511px;
   background: #fff url("../img/icons/arrow-right.svg") center / 20px 60px
     no-repeat;
 }
 
 .slider__button--previous {
   position: absolute;
-  top: 250px;
-  left: 19px;
+  top: 242px;
+  left: 9px;
   background: #fff url("../img/icons/arrow-left.svg") center / 20px 60px
     no-repeat;
 }
@@ -877,8 +884,8 @@ img {
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 339px;
-  right: 55px;
+  top: 352px;
+  right: 60px;
   display: flex;
   gap: 22px;
   list-style-type: none;
@@ -937,16 +944,48 @@ img {
 .catalog__image-wrapper {
   width: 160px;
   height: 160px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   background-color: #ffe17f;
   box-sizing: border-box;
   transition: 0.2s all ease-in;
 }
 
+.catalog__image--vr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .catalog__image--monopod {
-  align-self: flex-end;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.catalog__image--action-camera {
+  position: absolute;
+  top: 38px;
+  left: 49px;
+}
+
+.catalog__image--fitness-tracker {
+  position: absolute;
+  top: 50px;
+  left: 26px;
+}
+
+.catalog__image--watch {
+  position: absolute;
+  top: 31px;
+  left: 53px;
+}
+
+.catalog__image--quadrocopter {
+  position: absolute;
+  top: 49px;
+  left: 14px;
 }
 
 .catalog__link {
@@ -989,7 +1028,7 @@ img {
 }
 
 .catalog__text {
-  margin-bottom: 0;
+  margin: 33px 0 0 0;
   transition: 0.2s all ease-in;
 }
 
