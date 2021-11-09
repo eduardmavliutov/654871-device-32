@@ -116,7 +116,7 @@ img {
 
 .button--outlined {
   height: 55px;
-  padding: 15px 0 18px;
+  padding: 14px 0 16px 4px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -129,12 +129,12 @@ img {
 }
 
 .button--outlined:focus {
-  padding: 13px 0 16px;
+  padding: 12px 0 14px 4px;
   border: 5px solid #af4fff;
 }
 
 .button--outlined:hover {
-  padding: 15px 0 18px;
+  padding: 14px 0 16px;
   border: 3px solid #000;
 }
 
@@ -165,7 +165,6 @@ img {
   width: 1160px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
 }
 
 .subtitle {
@@ -921,7 +920,7 @@ img {
 
 /* Catalog */
 .main__catalog {
-  margin-bottom: 69px;
+  margin-bottom: 81px;
 }
 
 .catalog {
@@ -1055,7 +1054,7 @@ img {
 
 .services__tabs {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 284px 1fr;
 }
 
 .tabs__list {
@@ -1076,7 +1075,7 @@ img {
 }
 
 .tabs__list-item {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -1099,11 +1098,11 @@ img {
 .tab__button {
   padding: 9px 0 11px 0;
   margin-right: 117px;
-  min-width: 160px;
+  min-width: 164px;
 }
 
 .tab__button::after {
-  top: 15px;
+  top: 16px;
   background-color: #ffc700;
 }
 
@@ -1118,9 +1117,9 @@ img {
 .tab {
   position: absolute;
   display: none;
-  padding-left: 120px;
+  padding-left: 117px;
   padding-right: 100px;
-  padding-top: 70px;
+  padding-top: 71px;
 }
 
 .tab--active {
@@ -1132,18 +1131,19 @@ img {
   grid-template-areas:
     "title logo"
     "description logo";
+  margin-right: 60px;
 }
 
 .tab__title {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 27px;
   grid-area: title;
 }
 
 .tab__image {
-  width: 132px;
-  height: 158px;
-  margin-top: 15px;
+  width: 136px;
+  height: 164px;
+  margin-top: 14px;
   grid-area: logo;
 }
 
@@ -1234,7 +1234,7 @@ img {
 }
 
 .shipping-of-rare-products__text {
-  padding: 37px 125px 43px 140px;
+  padding: 42px 135px 43px 140px;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 800;
@@ -1267,11 +1267,15 @@ img {
 /* About */
 .main__about,
 .main__contacts {
-  padding-bottom: 87px;
-  width: 560px;
+  padding-bottom: 70px;
+  width: 498px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.main__about {
+  margin-right: 103px;
 }
 
 .about__line,
@@ -1283,30 +1287,31 @@ img {
 
 .about__title,
 .contacts__title {
-  margin: 42px 0 26px 0;
+  margin: 43px 0 45px 0;
 }
 
 .about__delivery-options {
+  margin-bottom: 10px;
   color: #444444;
   flex-grow: 1;
 }
 
 .about__text {
-  margin-top: 0;
+  margin: 0 0 12px 0;
   color: #444444;
 }
 
 .about__delivery-companies {
-  margin-top: 23px;
+  margin-top: 55px;
   margin-bottom: 0;
-  padding: 0;
+  padding: 10px 0 0 0;
   list-style-type: none;
 }
 
 .about__delivery-companies-item {
   position: relative;
-  padding-bottom: 25px;
-  padding-left: 34px;
+  padding-bottom: 20px;
+  padding-left: 35px;
   font-weight: 700;
   line-height: 20px;
 }
@@ -1323,15 +1328,14 @@ img {
   border-radius: 50%;
 }
 
-.about__more-link,
-.contacts__write-button {
-  width: 260px;
-  margin-top: 52px;
+.about__more-link {
+  width: 264px;
+  margin-top: 38px;
 }
 
 /* Contacts */
 .contacts__subtitle {
-  margin: 15px 0;
+  margin: 0 0 15px 0;
 }
 
 .contacts__schedule {
@@ -1341,7 +1345,7 @@ img {
 }
 
 .contacts__text {
-  margin-top: 0;
+  margin: 0 0 30px 0;
   color: #444444;
   font-style: normal;
 }
@@ -1350,6 +1354,8 @@ img {
 .contacts__schedule-item {
   margin: 0;
   color: #444444;
+  letter-spacing: -0.05px;
+  white-space: nowrap;
   font-style: normal;
 }
 
@@ -1357,9 +1363,14 @@ img {
   margin-bottom: 30px;
 }
 
+.contacts__write-button {
+  width: 262px;
+  margin-top: 53px;
+}
+
 /* Subscribe */
 .main__subscribe {
-  padding: 75px 0 131px 0;
+  padding: 77px 0 131px 0;
   background-color: #f0f0f0;
 }
 
@@ -1368,7 +1379,8 @@ img {
   width: 1160px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 50px;
+  row-gap: 59px;
+  column-gap: 40px;
   align-items: center;
 }
 
@@ -1379,6 +1391,7 @@ img {
 
 .subscribe__text {
   margin: 0;
+  padding-top: 10px;
   grid-column: span 2;
   color: #444444;
 }
@@ -1390,10 +1403,10 @@ img {
 }
 
 .subscribe__form-field {
-  max-width: 580px;
   height: 55px;
-  padding: 0;
+  padding: 3px 0 0 1px;
   flex-grow: 1;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   box-sizing: border-box;
   background: transparent;
@@ -1436,7 +1449,7 @@ img {
   position: absolute;
   width: 14px;
   height: 14px;
-  left: 0;
+  left: -1px;
   top: 50%;
   transform: translateY(-50%);
   background: url("../img/icons/done.svg") center / 14px 14px no-repeat;
@@ -1756,18 +1769,20 @@ img {
 
 .footer__container {
   margin: 0 auto;
-  padding: 61px 0;
+  padding: 62px 0;
   width: 1160px;
   display: flex;
   flex-direction: column;
 }
 
 .footer__logo {
+  margin-left: -2px;
   padding-bottom: 35px;
 }
 
 .footer__contacts {
-  margin-bottom: 66px;
+  margin-bottom: 40px;
+  margin-right: -17px;
   display: flex;
 }
 
@@ -1814,18 +1829,21 @@ img {
 }
 
 .footer__contacts .main-navigation {
-  margin: 0;
-  margin-left: -85px;
+  margin: -10px 0 0 -43px;
   padding: 0;
   flex-grow: 1;
   justify-content: center;
-  gap: 20px;
   flex-basis: unset;
 }
 
 .footer__contacts .main-navigation__item {
+  margin-left: -11px;
   flex-basis: 140px;
   text-align: center;
+}
+
+.footer__contacts .main-navigation__item:first-child {
+  margin-left: 0;
 }
 
 .footer__contacts .main-navigation__link:hover {
@@ -1844,17 +1862,22 @@ img {
 
 /* Socials */
 .footer__socials {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .socials__list {
+  position: absolute;
+  left: 50%;
+  top: 3px;
+  transform: translateX(-50%);
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   justify-content: center;
   gap: 5px;
 }
@@ -1866,6 +1889,7 @@ img {
 }
 
 .socials__academy-link {
+  margin-right: -13px;
   padding: 10px;
   display: flex;
   border: 2px solid transparent;
