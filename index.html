@@ -16,7 +16,8 @@
       <img class="header__logo" src="img/logo-header.svg" width="145" height="36" alt="Логотип магазина Device.">
       <nav class="header__navigation">
         <form class="header__search" method="get" action="https://echo.htmlacademy.ru/">
-          <input class="search__input" placeholder="Поиск по сайту" type="search" name="search">
+          <label class="visually-hidden" for="search-input">Поиск по сайту</label>
+          <input class="search__input" placeholder="Поиск по сайту" type="search" name="search" id="search-input">
           <button class="search__submit" type="submit">
             Найти
           </button>
@@ -537,7 +538,8 @@
           длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
         </p>
         <form class="subscribe__form" method="post" action="https://echo.htmlacademy.ru/">
-          <input class="subscribe__form-field" name="email" type="email" placeholder="Ваш e-mail">
+          <label class="visually-hidden" for="subscribe-form-email">E-mail</label>
+          <input class="subscribe__form-field" name="email" type="email" placeholder="Ваш e-mail" id="subscribe-form-email">
           <button class="subscribe__form-submit button--outlined" type="submit">
             Подписаться
           </button>
