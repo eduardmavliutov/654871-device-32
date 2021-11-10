@@ -185,7 +185,7 @@ img {
 .header__container {
   width: 1080px;
   margin: 41px auto 0 auto;
-  padding: 36px 40px 40px 40px;
+  padding: 36px 40px 38px 40px;
   position: relative;
   color: inherit;
   background-color: #ffe17f;
@@ -312,13 +312,18 @@ img {
   margin: -1px 0 0 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 1fr repeat(3, auto);
+  justify-content: end;
 }
 
-.user-navigation__item--user {
-  flex-grow: 1;
+.user-navigation__item--logout {
+  margin-left: -110px;
+}
+
+.user-navigation__item--login {
+  grid-column: span 2;
+  justify-self: start;
 }
 
 .user-navigation__item--cart {
@@ -350,7 +355,6 @@ img {
 .user-navigation__link--logout {
   color: rgba(0, 0, 0, 0.3);
   padding: 8px 20px 8px 20px;
-  margin-left: -25px;
 }
 
 .user-navigation__link--user {
