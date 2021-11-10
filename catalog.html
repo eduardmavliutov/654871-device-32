@@ -187,8 +187,8 @@
             </p>
           </div>
           <div class="filters__container">
-            <fieldset class="filter__wrapper">
-              <legend class="filter__name">
+            <fieldset class="filter__wrapper filter__wrapper--price">
+              <legend class="filter__name filter__name--price">
                 Стоимость
               </legend>
               <div class="range-filter__container">
@@ -197,21 +197,21 @@
                 <label class="range-filter__label--min visually-hidden" for="price-min">
                   Минимальная цена
                 </label>
-                <input class="range-filter__input range-filter__input--min" type="range" name="price-min" id="price-min" value="0" min="0" max="7500">
+                <input class="range-filter__input range-filter__input--min" type="range" name="price-min" id="price-min" value="0" min="0" max="8100">
                 <span class="range-filter__value range-filter__value--min">
                   от 0
                 </span>
                 <label class="range-filter__label--max visually-hidden" for="price-max">
                   Максимальная цена
                 </label>
-                <input class="range-filter__input range-filter__input--max" type="range" name="price-max" id="price-max" value="5000" min="0" max="7500">
+                <input class="range-filter__input range-filter__input--max" type="range" name="price-max" id="price-max" value="5000" min="0" max="8100">
                 <span class="range-filter__value range-filter__value--max">
                   до 5000
                 </span>
               </div>
             </fieldset>
-            <fieldset class="filter__wrapper">
-              <legend class="filter__name">
+            <fieldset class="filter__wrapper filter__wrapper--color">
+              <legend class="filter__name filter__name--color">
                 Цвет
               </legend>
               <label class="filter__label">
@@ -265,8 +265,8 @@
                 </span>
               </label>
             </fieldset>
-            <fieldset class="filter__wrapper">
-              <legend class="filter__name">
+            <fieldset class="filter__wrapper filter__wrapper--bluetooth">
+              <legend class="filter__name filter__name--bluetooth">
                 Bluetooth
               </legend>
               <label class="filter__label">
@@ -289,7 +289,7 @@
             </button>
           </div>
         </form>
-        <div class="catalog-page__column">
+        <div class="catalog-page__main">
           <div class="catalog-page__sorting">
             <div class="catalog-page__sorting-container">
               <form class="catalog-page__sorting-by-type" method="get" action="https://echo.htmlacademy.ru/">
@@ -361,7 +361,8 @@
 
                   <div class="product__details">
                     <h3 class="product__title">
-                      Профессиональная селфи-палка
+                      Профессиональная<br>
+                      селфи-палка
                     </h3>
                     <span class="product__price">
                       1 500 ₽
@@ -379,7 +380,7 @@
 
                   <div class="product__details">
                     <h3 class="product__title">
-                      Непотопляемая
+                      Непотопляемая<br>
                       селфи-палка
                     </h3>
                     <span class="product__price">
@@ -412,7 +413,7 @@
               </div>
             </div>
             <button class="catalog-page__load-more-button button--outlined">
-              Загрузить еще
+              Загрузить ещё
             </button>
             <ul class="catalog-page__pagination">
               <li class="pagination__item">

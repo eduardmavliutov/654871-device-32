@@ -1965,13 +1965,15 @@ img {
 
 /* Catalog container */
 .catalog-page__container {
-  margin: 37px auto 49px auto;
+  margin: 37px auto 42px auto;
   padding: 0 40px 0 40px;
   width: 1080px;
 }
 
 .catalog-page__title {
-  margin: 0 0 14px 20px;
+  margin-left: 20px;
+  margin-bottom: 18px;
+  padding-top: 1px;
 }
 
 /* Breadcrumbs */
@@ -1980,19 +1982,19 @@ img {
   padding: 0 0 0 8px;
   display: flex;
   list-style-type: none;
-  gap: 36px;
 }
 
 .breadcrumbs-item {
   position: relative;
+  margin-right: 9px;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
   content: "";
   width: 4px;
   height: 7px;
-  top: 13px;
-  right: -20px;
+  top: 12px;
+  right: -7px;
   position: absolute;
   background: #fff url("../img/icons/breadcrumb-arrow.svg") center / 4px 7px
     no-repeat;
@@ -2036,18 +2038,16 @@ img {
 
 .catalog-page__columns {
   width: 100%;
-  display: flex;
-  justify-content: stretch;
+  display: grid;
+  grid-template-columns: 33.5% auto;
 }
 
-.catalog-page__column {
+.catalog-page__main {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
 }
 
 .catalog-page__filters {
-  width: 33%;
   display: grid;
   grid-template-rows: 70px 1fr;
   background-color: #e5e5e5;
@@ -2072,18 +2072,25 @@ img {
   border: none;
 }
 
-.filter__wrapper:first-child {
-  margin-bottom: 36px;
+.filter__wrapper--price {
+  margin-bottom: 34px;
+}
+
+.filter__wrapper--color {
+  margin-bottom: 29px;
+}
+
+.filter__wrapper--bluetooth {
+  margin-bottom: 24px;
+}
+
+.filter__wrapper--color .filter__label,
+.filter__wrapper--bluetooth .filter__label {
+  margin-bottom: 10px;
 }
 
 .filter__label {
   position: relative;
-}
-
-.filter__name {
-  padding-top: 12px;
-  width: 100%;
-  border-top: 2px solid #000;
 }
 
 .filters__title-container {
@@ -2096,20 +2103,20 @@ img {
 
 .filters__title {
   width: 200px;
-  margin: 0 60px 0 0;
+  margin: 0 68px 0 0;
   display: flex;
   align-items: center;
 }
 
 .filters__container {
-  padding-top: 71px;
-  width: 200px;
+  padding-top: 70px;
+  width: 197px;
   margin-left: auto;
-  margin-right: 62px;
+  margin-right: 73px;
 }
 
 .filters__submit {
-  width: 100%;
+  width: 104%;
 }
 
 .filters__submit:after {
@@ -2122,16 +2129,26 @@ img {
 
 .filter__name {
   margin-bottom: 15px;
+  padding-top: 12px;
+  width: 100%;
   height: 34px;
   font-weight: bold;
   line-height: 20px;
   letter-spacing: -0.02em;
+  border-top: 2px solid #000;
+}
+
+.filter__name--color,
+.filter__name--bluetooth {
+  margin-bottom: 8px;
 }
 
 .filter__mark {
   position: absolute;
 
-  top: 50%;
+  top: 16px;
+  left: 1px;
+
   border: 2px solid rgba(0, 0, 0, 0.2);
 
   transform: translateY(-50%);
@@ -2163,7 +2180,7 @@ img {
 }
 
 .filter__label-text {
-  margin-left: 37px;
+  margin-left: 39px;
   font-size: 16px;
   line-height: 19px;
 }
@@ -2221,7 +2238,7 @@ img {
 .range-filter__bar {
   position: absolute;
   top: 9px;
-  width: 66%;
+  width: 63%;
   height: 2px;
   background-color: #000;
 }
@@ -2337,11 +2354,11 @@ img {
 }
 
 .range-filter__value--max {
-  left: 105px;
+  left: 91px;
 }
 
 .catalog-page__sorting {
-  padding: 22px 0 18px 69px;
+  padding: 20px 0 20px 71px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2366,7 +2383,7 @@ img {
 }
 
 .sorting__type {
-  padding: 4px 41px 7px 13px;
+  padding: 5px 41px 7px 0px;
   position: relative;
   font-family: inherit;
   font-size: 16px;
@@ -2440,7 +2457,7 @@ img {
 /* Products */
 .catalog-page__products-wrapper {
   width: 760px;
-  padding-left: 72px;
+  padding-left: 71px;
   padding-top: 69px;
 }
 
@@ -2497,7 +2514,7 @@ img {
 }
 
 .product__details {
-  padding-top: 32px;
+  padding-top: 23px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -2520,8 +2537,8 @@ img {
 }
 
 .product__label-wrapper {
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
   position: absolute;
   top: 27px;
   right: 27px;
@@ -2533,6 +2550,7 @@ img {
 }
 
 .product__label {
+  margin-right: -2px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 14px;
@@ -2562,6 +2580,7 @@ img {
 
 .catalog-page__load-more-button {
   margin-bottom: 51px;
+  padding-top: 15px;
   width: 100%;
   font-size: 16px;
   line-height: 19px;
@@ -2571,12 +2590,12 @@ img {
 /* Pagination */
 .catalog-page__pagination {
   padding: 0;
-  margin: 0 0 77px 0;
+  margin: 0 0 78px 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: 1fr repeat(5, 38px) 1fr;
+  grid-template-columns: 1fr repeat(5, 1px) 1fr;
   align-items: baseline;
-  gap: 13px;
+  gap: 39px;
   background-color: #ebebeb;
 }
 
@@ -2595,7 +2614,7 @@ img {
 
 .pagination__link--previous-page,
 .pagination__link--next-page {
-  padding: 22px 29px 19px;
+  padding: 21px 23px 19px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
