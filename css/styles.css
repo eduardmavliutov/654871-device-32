@@ -443,10 +443,10 @@ img {
 
 .cart__popup {
   position: absolute;
-  top: 38px;
-  left: -132px;
+  top: 39px;
+  left: -131px;
   z-index: 1;
-  display: none;
+  display: flex;
   flex-direction: column;
   width: 320px;
   font-size: 16px;
@@ -455,11 +455,11 @@ img {
   background-color: #000;
 }
 
-.cart__popup::before {
+.cart__popup::after {
   content: "";
   position: relative;
-  top: -5px;
-  left: 153px;
+  top: -301px;
+  left: 150px;
   width: 14px;
   height: 6px;
   background-color: #000;
@@ -476,7 +476,7 @@ img {
 
 .cart__item {
   display: flex;
-  padding: 21px;
+  padding: 21px 13px 20px 20px;
 }
 
 .cart__item:not(:last-child) {
@@ -485,7 +485,6 @@ img {
 
 .cart__item-link {
   display: flex;
-  gap: 23px;
   text-decoration: none;
   color: inherit;
   transition: 0.2s all ease-in;
@@ -519,6 +518,8 @@ img {
 }
 
 .cart__item-image {
+  margin-top: -1px;
+  margin-right: 23px;
   transition: 0.2s outline ease-in;
 }
 
@@ -530,6 +531,7 @@ img {
 .cart__delete-button {
   width: 25px;
   height: 23px;
+  margin-left: auto;
   background: #000 url("../img/icons/delete-white.svg") center / 11px 11px
     no-repeat;
   border: 2px solid #000;
@@ -570,7 +572,13 @@ img {
 }
 
 .cart__open-cart-button {
-  margin: 21px;
+  margin: 21px 21px 14px;
+  letter-spacing: 0.2em;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .main-navigation {
