@@ -384,7 +384,7 @@
     </section>
     <section class="main__services">
       <div class="services__container">
-        <div class="services__tabs">
+        <div class="tab tab--active">
           <ul class="tabs__list">
             <li class="tabs__list-item tab__list-item--active">
               <a class="button tab__button" href="#shipping" tabindex="-1">
@@ -402,45 +402,77 @@
               </a>
             </li>
           </ul>
-          <div class="tabs__main">
-            <div class="tab tab--active">
-              <div class="tab__content">
-                <h3 class="tab__title title">
-                  Доставка
-                </h3>
-                <p class="tab__description">
-                  Мы с удовольствием доставим ваш товар прямо<br>
-                  к вашему подъезду совершенно бесплатно! Ведь<br>
-                  мы неплохо заработаем, поднимая его на ваш этаж.
-                </p>
-              </div>
-              <div class="tab__image tab__image--delivery"></div>
-            </div>
-            <div class="tab">
-              <div class="tab__content">
-                <h3 class="tab__title title">
-                  Гарантия
-                </h3>
-                <p class="tab__description">
-                  Если из-за возгорания купленного у нас товара у вас
-                  сгорит дом — не переживайте, мы выдадим вам новый.
-                  Товар, не дом, конечно же.
-                </p>
-              </div>
-              <div class="tab__image tab__image--warranty"></div>
-            </div>
-            <div class="tab">
-              <div class="tab__content">
-                <h3 class="tab__title title">
-                  Кредит
-                </h3>
-                <p class="tab__description">
-                  Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
-                  кредита. Выгодные для банка, разумеется.
-                </p>
-              </div>
-              <div class="tab__image tab__image--credit"></div>
-            </div>
+          <div class="tab__content">
+            <h3 class="tab__title title">
+              Доставка
+            </h3>
+            <p class="tab__description">
+              Мы с удовольствием доставим ваш товар прямо<br>
+              к вашему подъезду совершенно бесплатно! Ведь<br>
+              мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
+            <div class="tab__image tab__image--delivery"></div>
+          </div>
+        </div>
+
+        <div class="tab">
+          <ul class="tabs__list">
+            <li class="tabs__list-item">
+              <a class="button tab__button" href="#shipping" tabindex="-1">
+                Доставка
+              </a>
+            </li>
+            <li class="tabs__list-item tab__list-item--active">
+              <a class="button tab__button" href="#warranty">
+                Гарантия
+              </a>
+            </li>
+            <li class="tabs__list-item">
+              <a class="button tab__button" href="#credit">
+                Кредит
+              </a>
+            </li>
+          </ul>
+          <div class="tab__content">
+            <h3 class="tab__title title">
+              Гарантия
+            </h3>
+            <p class="tab__description">
+              Если из-за возгорания купленного у нас товара у вас
+              сгорит дом — не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.
+            </p>
+            <div class="tab__image tab__image--warranty"></div>
+          </div>
+        </div>
+
+        <div class="tab">
+          <ul class="tabs__list">
+            <li class="tabs__list-item">
+              <a class="button tab__button" href="#shipping" tabindex="-1">
+                Доставка
+              </a>
+            </li>
+            <li class="tabs__list-item">
+              <a class="button tab__button" href="#warranty">
+                Гарантия
+              </a>
+            </li>
+            <li class="tabs__list-item tab__list-item--active">
+              <a class="button tab__button" href="#credit">
+                Кредит
+              </a>
+            </li>
+          </ul>
+          <div class="tab__content">
+            <h3 class="tab__title title">
+              Кредит
+            </h3>
+            <p class="tab__description">
+              Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+              кредита. Выгодные для банка, разумеется.
+            </p>
+            <div class="tab__image tab__image--credit"></div>
           </div>
         </div>
 
@@ -539,7 +571,8 @@
         </p>
         <form class="subscribe__form" method="post" action="https://echo.htmlacademy.ru/">
           <label class="visually-hidden" for="subscribe-form-email">E-mail</label>
-          <input class="subscribe__form-field" name="email" type="email" placeholder="Ваш e-mail" id="subscribe-form-email">
+          <input class="subscribe__form-field" name="email" type="email" placeholder="Ваш e-mail"
+            id="subscribe-form-email">
           <button class="subscribe__form-submit button--outlined" type="submit">
             Подписаться
           </button>
