@@ -235,6 +235,7 @@ img {
   position: relative;
   flex-basis: 540px;
   display: flex;
+  padding: 2px 0 3px;
 }
 
 .header__search:before {
@@ -250,7 +251,7 @@ img {
 }
 
 .search__input {
-  padding: 11px 16px 11px 54px;
+  padding: 9px 16px 8px 54px;
   flex-grow: 1;
   box-sizing: border-box;
   border: 2px solid var(--color-black);
@@ -296,7 +297,7 @@ img {
 }
 
 .search__submit {
-  padding: 8px 0;
+  padding: 9px 0 8px;
   width: 160px;
   height: 100%;
   right: 0;
