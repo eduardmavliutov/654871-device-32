@@ -189,6 +189,7 @@ img {
   position: relative;
   color: inherit;
   background-color: #ffe17f;
+  z-index: 1;
 }
 
 .header__container--main-page {
@@ -2576,7 +2577,6 @@ img {
 
 .catalog-page__load-more-button {
   margin-bottom: 51px;
-  /* padding-top: 15px; */
   width: 100%;
   font-size: 16px;
   line-height: 19px;
