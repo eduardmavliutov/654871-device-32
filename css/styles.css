@@ -81,7 +81,7 @@ img {
 
 .button {
   padding: 14px 0 16px 0;
-  height: 20px;
+  min-height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,7 +136,7 @@ img {
 }
 
 .button--outlined {
-  height: 55px;
+  min-height: 55px;
   padding: 14px 0 16px 4px;
   font-family: var(--font-family--raleway);
   text-transform: uppercase;
@@ -577,7 +577,7 @@ img {
 }
 
 .cart__summary {
-  height: 44px;
+  min-height: 44px;
   padding: 0 21px;
   margin: 0;
   display: grid;
@@ -782,7 +782,7 @@ img {
   display: none;
   position: relative;
   width: 1160px;
-  height: 710px;
+  min-height: 710px;
 }
 
 .slider__item--active {
@@ -919,7 +919,7 @@ img {
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 500px;
+  bottom: 180px;
   right: 60px;
   display: flex;
   gap: 22px;
@@ -1067,7 +1067,7 @@ img {
 /* Services */
 .main__services {
   background-color: var(--color-white--secondary);
-  height: 388px;
+  min-height: 388px;
   z-index: 0;
   position: relative;
 }
@@ -1159,7 +1159,7 @@ img {
 
 .tab__title {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 33px;
   grid-area: title;
 }
 
@@ -1171,7 +1171,7 @@ img {
 }
 
 .tab__description {
-  margin: 0;
+  margin: 0 0 69px 0;
   width: 492px;
   grid-area: description;
   color: var(--color-black--light);
@@ -1393,7 +1393,7 @@ img {
 
 /* Subscribe */
 .main__subscribe {
-  padding: 77px 0 131px 0;
+  padding: 76px 0 131px 0;
   background-color: var(--color-white--secondary);
 }
 
@@ -1480,6 +1480,7 @@ img {
 
 .subscribe__form-submit {
   width: 260px;
+  height: 55px;
   font-size: inherit;
   transition: 0.2s all ease-in;
 }
@@ -2386,7 +2387,6 @@ img {
 
 .catalog-page__sorting-container {
   width: 770px;
-  height: 31px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2493,7 +2493,7 @@ img {
 .product {
   position: relative;
   width: 360px;
-  height: 462px;
+  min-height: 462px;
 }
 
 .product__link {
